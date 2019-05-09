@@ -1,1073 +1,1073 @@
 b u
 b a
-b o [c]Ö
-Öb o ÄÖ
-Öb a hÖ
-Öb a ðÖ
-b aù ð
-Öb o ðÖ
-Öb où ðÖ
-b [v] j rÖ
-Öb a kÖ
-Öb o kWÖ
-Öb a lÖ
-Öb a lÖ
-Öb e lÖ
-b iù lÖ
-b u ÂÖ
-Öb [v] n
-Öb i nÖ
-Öb a rÖ
-Öb e rÖ
-Öb i rÖ
-Öb [v] r kÖ
-b a s'Ö
-b i SÖ
-b aù t'Ö
-Öb a tÂ'Ö
-Öb [vù] ts
-Öb o xÖ
-Öb où xÖ
-Öb [v] xWÖ
-b aù y nÖ
-Öb eù zÖ
-Öb a ?Ö
-Öb i ?Ö
-Öb u ?Ö
-Öb a ÀÖ
-Öb a ÀÖ
-Öb aù ÀÖ
-Öb u ÀÖ
-Öp a [c]
-Öp [v] ðÖ
-Öp [v] ðÖ
-Öp eù lÖ
-Öp i lÖ
-Öp iù lÖ
-Öp i ÂÖ
-p a n dÖ
-Öp a NWÖ
-Öp u cþ'Ö
-Öp [v] rÖ
-Öp u rÖ
-Öp i rÖ
-Öp où rÖ
-Öp u rÖ
-Öp a [c]Ö
-Öp où SÖ
-Öp u tÖ
-Öp a tÂ'Ö
-Öp aù tÂ'Ö
-Öp a x
-Öp a xÖ
-Öp aù xÖ
-p iù zÖ
-Öp [v] ?Ö
-Öp a ? rÖ
-Öp iù ?Ö
-Öp [v] ÀÖ
-Öp u ÀÖ
-a fÖ
-Öf iÖ
-Öf i cþ'Ö
-Öf iù cþ'Ö
-Öf a dÖ
-Öf u gÖ
-Öf o ÄÖ
-Öf [v] ÄÖ
-Öf u ÄÖ
-Öf aù h
-Öf aù ðÖ
-Öf iù ðÖ
-Öf a kÖ
-Öf aù k'Ö
-Öf [v] k'Ö
-Öf [vù] k'Ö
-Öf [v] lÖ
-Öf i lÖ
-Öf e NÖ
-Öf où [n]Ö
-Öf a rÖ
-Öf i rÖ
-Öf où rÖ
-Öf [v] sÖ
-Öf a t'Ö
-Öf [vù] t'Ö
-Öf i t'Ö
-Öf o [x]Ö
-Öf a y tÖ
-Öf a z wÖ
-Öf i zÖ
-Öf eù ?Ö
-Öf [v] ?Ö
-Öf u ?Ö
-Öf iù ?Ö
-Öf uù ÀÖ
-Öp a cþ'Ö
-Öp' u cþ'Ö
-Öp' a dÖ
-Öp' [v] dÖ
-Öp' [v] dÖ
-Öp' o hÖ
-p' i ðÖ
-Öp' a kÖ
-Öp' [v] k'Ö
-Öp' u lÖ
-Öp' a ÂÖ
-Öp' aù rÖ
-Öp' u rÖ
-Öp' i s' k'Ö
-Öp' iù zÖ
-Öp' u ?Ö
-Öp' uù ?Ö
-Öp' u ÀÖ
-Öd [v] a d a ?
-d [v] dÖ
-d a d nÖ
-Öd [v] bÖ
-Öd où bÖ
-Öd a cþÖ
-Öd [v] fÖ
-Öd u gÖ
-Öd a gWÖ
-Öd i ÄÖ
-Öd i ÄWÖ
-Öd a hÖ
-Öd a ðÖ
-Öd [vù] ðÖ
-Öd i kÖ
-d u kWÖ
-d uù kÖ
-Öd o k'Ö
-Öd u [k']Ö
-Öd i lÖ
-Öd u lÖ
-Öd [v] ÂÖ
-Öd a mÖ
-d [v] mÖ
-Öd [v] mÖ
-Öd u mÖ
-d u m nÖ
-d a n dÖ
-Öd a pÖ
-d u p'Ö
-Öd u p' sÖ
-Öd [v] p'Ö
-Öd a rÖ
-Öd a rÖ
-Öd i rÖ
-Öd [vù] s'Ö
-Öd a wÖ
-Öd a xÖ
-Öd a xÖ
-Öd uù xÖ
-Öd a ÀÖ
-Öd a ÀÖ
-Öiù tÖ
-Öt aÖ
-Öt i bÖ
-Öt iù bÖ
-Öt u fÖ
-Öt a ÄÖ
-Öt [v] ÄÖ
-Öt a hÖ
-Öt a ðÖ
-Öt [v] kÖ
-Öt [v] kÖ
-Öt a kWÖ
-Öt [v] kWÖ
-Öt e lÖ
-Öt uù lÖ
-Öt u mÖ
-Öt a rÖ
-Öt a rÖ
-Öt a rÖ
-Öt aù rÖ
-t [v] rÖ
-t i rÖ
-Öt a ÀÖ
+b o [c]
+b o &#611
+b a h
+b a &#295
+b a&#720 &#295
+b o &#295
+b o&#720 &#295
+b [v] j r
+b a k
+b o k&#695
+b a l
+b a l
+b e l
+b i&#720 l
+b u &#620
+b [v] n
+b i n
+b a r
+b e r
+b i r
+b [v] r k
+b a s'
+b i &#643
+b a&#720 t'
+b a t&#620'
+b [v&#720] ts
+b o x
+b o&#720 x
+b [v] x&#695
+b a&#720 y n
+b e&#720 z
+b a &#660
+b i &#660
+b u &#660
+b a &#661
+b a &#661
+b a&#720 &#661
+b u &#661
+p a [c]
+p [v] &#295
+p [v] &#295
+p e&#720 l
+p i l
+p i&#720 l
+p i &#620
+p a n d
+p a &#331&#695
+p u c&#597'
+p [v] r
+p u r
+p i r
+p o&#720 r
+p u r
+p a [c]
+p o&#720 &#643
+p u t
+p a t&#620'
+p a&#720 t&#620'
+p a x
+p a x
+p a&#720 x
+p i&#720 z
+p [v] &#660
+p a &#660 r
+p i&#720 &#660
+p [v] &#661
+p u &#661
+a f
+f i
+f i c&#597'
+f i&#720 c&#597'
+f a d
+f u g
+f o &#611
+f [v] &#611
+f u &#611
+f a&#720 h
+f a&#720 &#295
+f i&#720 &#295
+f a k
+f a&#720 k'
+f [v] k'
+f [v&#720] k'
+f [v] l
+f i l
+f e &#331
+f o&#720 [n]
+f a r
+f i r
+f o&#720 r
+f [v] s
+f a t'
+f [v&#720] t'
+f i t'
+f o [x]
+f a y t
+f a z w
+f i z
+f e&#720 &#660
+f [v] &#660
+f u &#660
+f i&#720 &#660
+f u&#720 &#661
+p a c&#597'
+p' u c&#597'
+p' a d
+p' [v] d
+p' [v] d
+p' o h
+p' i &#295
+p' a k
+p' [v] k'
+p' u l
+p' a &#620
+p' a&#720 r
+p' u r
+p' i s' k'
+p' i&#720 z
+p' u &#660
+p' u&#720 &#660
+p' u &#661
+d [v] a d a &#660
+d [v] d
+d a d n
+d [v] b
+d o&#720 b
+d a c&#597
+d [v] f
+d u g
+d a g&#695
+d i &#611
+d i &#611&#695
+d a h
+d a &#295
+d [v&#720] &#295
+d i k
+d u k&#695
+d u&#720 k
+d o k'
+d u [k']
+d i l
+d u l
+d [v] &#620
+d a m
+d [v] m
+d [v] m
+d u m
+d u m n
+d a n d
+d a p
+d u p'
+d u p' s
+d [v] p'
+d a r
+d a r
+d i r
+d [v&#720] s'
+d a w
+d a x
+d a x
+d u&#720 x
+d a &#661
+d a &#661
+i&#720 t
+t a
+t i b
+t i&#720 b
+t u f
+t a &#611
+t [v] &#611
+t a h
+t a &#295
+t [v] k
+t [v] k
+t a k&#695
+t [v] k&#695
+t e l
+t u&#720 l
+t u m
+t a r
+t a r
+t a r
+t a&#720 r
+t [v] r
+t i r
+t a &#661
 z a
-Öz a bÖ
-Öz a bÖ
-Öz aù bÖ
-Öz aù dÖ
-Öz a fÖ
-Öz i fÖ
-Öz a [c] gÖ
-Öz [v] gWÖ
-Öz a ÄÖ
-Öz où ÄÖ
-Öz aù ðÖ
-Öz a kWÖ
-Öz a k'Ö
-Öz aù kÖ
-Öz a lÖ
-Öz o ÂÖ
-Öz où ÂÖ
-Öz a n fÖ
-Öz i nÖ
-Öz [v] NÖ
-Öz a NÖ
-Öz aù rÖ
-Öz o [c]Ö
-Öz aù xÖ
-Öz a [c]Ö
-Öz a ÀÖ
-Öz aù ÀÖ
-Öz aù ÀÖ
+z a b
+z a b
+z a&#720 b
+z a&#720 d
+z a f
+z i f
+z a [c] g
+z [v] g&#695
+z a &#611
+z o&#720 &#611
+z a&#720 &#295
+z a k&#695
+z a k'
+z a&#720 k
+z a l
+z o &#620
+z o&#720 &#620
+z a n f
+z i n
+z [v] &#331
+z a &#331
+z a&#720 r
+z o [c]
+z a&#720 x
+z a [c]
+z a &#661
+z a&#720 &#661
+z a&#720 &#661
 s i
 i s i
 s u
 u s u
-Ös [v] fÖ
-Ös a ÄÖ
-Ös [v] k'Ö
-Ös u kÖ
-Ös [v] k'Ö
-Ös [v] kW'Ö
-Ös i lÖ
-Ös i lÖ
-Ös i mÖ
-Ös [v] mÖ
-Ös u mÖ
-Ös [v] nÖ
-Ös [v] nÖ
-Ös iù NWÖ
-Ös a pÖ
-Ös [v] pÖ
-Ös o pÖ
-Ös a rÖ
-s a rÖ
-s [v] rÖ
-s [v] r aù rÖ
-Ös [v] [c]
-Ös a xÖ
-Ös i xÖ
-Ös iù xÖ
-Ös o xÖ
-Ös aù zÖ
-Ös i ?Ö
-Ös o ?Ö
-Ös a ÀÖ
-Öt' [v] bÖ
-Öt' i bÖ
-Öt' o gWÖ
-Öt' o ÄÖ
-Öt' o [Ä]Ö
-Öt' e hÖ
-Öt eù hÖ
-Öt' [v] hÖ
-t' i ðÖ
-Öt' i ðÖ
-Öt' [v] ðÖ
-Öt' e lÖ
-Öt' [v] ÂÖ
-Öt' a pÖ
-Öt' [v] p' Ö[v]
-Öt' eù rÖ
-t' i rÖ
-Öt' u rÖ
-Öt' [v] s'Ö
-Öt' aù wÖ
-Öt' [v] yÖ
-t' a y p'Ö
-Öt' e ?Ö
-g a bÖ
-g a bÖ
-g [v] bÖ
-Ög [v] dÖ
-Ög a dÖ
-Ög aù dÖ
-Ög [vù] dÖ
-Ög a dzÖ
-Ög a fÖ
-Ög a fÖ
-Ög [v] fÖ
-Ög u fÖ
-Ög e hÖ
-Ög [v] ðÖ
-Ög a lÖ
-Ög aù lÖ
-g a mÖ
-Ög [v] mÖ
-Ög i mÖ
-Ög [v] NÖ
-Ög uù p'Ö
-Ög a rÖ
-Ög e r ÀÖ
-Ög i rÖ
-Ög u sÖ
-Ög a SÖ
-Ög u SÖ
-Ög e zÖ
-Ög [v] ÀÖ
-Ög u ÀÖ
-Ög u ÀÖ
-Ög uù ÀÖ
-gW a a
-ÖgW a bÖ
-ÖgW [v] dÖ
-ÖgW [v] dÖ
-ÖgW a hÖ
-ÖgW a ðÖ
-ÖgW e ðÖ
-ÖgW a jÖ
-ÖgW i lÖ
-ÖgW a rÖ
-ÖgW [v] rÖ
-ÖgW aù tsÖ
-ÖgW i tsÖ
-ÖgW [v] ?Ö
-ÖgW [vù] ÀÖ
-gW a À bÖ
-k aù
+s [v] f
+s a &#611
+s [v] k'
+s u k
+s [v] k'
+s [v] k&#695'
+s i l
+s i l
+s i m
+s [v] m
+s u m
+s [v] n
+s [v] n
+s i&#720 &#331&#695
+s a p
+s [v] p
+s o p
+s a r
+s a r
+s [v] r
+s [v] r a&#720 r
+s [v] [c]
+s a x
+s i x
+s i&#720 x
+s o x
+s a&#720 z
+s i &#660
+s o &#660
+s a &#661
+t' [v] b
+t' i b
+t' o g&#695
+t' o &#611
+t' o [&#611]
+t' e h
+t e&#720 h
+t' [v] h
+t' i &#295
+t' i &#295
+t' [v] &#295
+t' e l
+t' [v] &#620
+t' a p
+t' [v] p' [v]
+t' e&#720 r
+t' i r
+t' u r
+t' [v] s'
+t' a&#720 w
+t' [v] y
+t' a y p'
+t' e &#660
+g a b
+g a b
+g [v] b
+g [v] d
+g a d
+g a&#720 d
+g [v&#720] d
+g a dz
+g a f
+g a f
+g [v] f
+g u f
+g e h
+g [v] &#295
+g a l
+g a&#720 l
+g a m
+g [v] m
+g i m
+g [v] &#331
+g u&#720 p'
+g a r
+g e r &#661
+g i r
+g u s
+g a &#643
+g u &#643
+g e z
+g [v] &#661
+g u &#661
+g u &#661
+g u&#720 &#661
+g&#695 a a
+g&#695 a b
+g&#695 [v] d
+g&#695 [v] d
+g&#695 a h
+g&#695 a &#295
+g&#695 e &#295
+g&#695 a j
+g&#695 i l
+g&#695 a r
+g&#695 [v] r
+g&#695 a&#720 ts
+g&#695 i ts
+g&#695 [v] &#660
+g&#695 [v&#720] &#661
+g&#695 a &#661 b
+k a&#720
 k i
 k u
 k a
-Ök [v] cþÖ
-Ök aù cþ'Ö
-Ök [vù] fÖ
-Ök a ðÖ
-Ök a lÖ
-Ök [v] lÖ
-k o lÖ
-Ök u lÖ
-Ök o ÂÖ
-Ök a mÖ
-Ök u mÖ
-Ök uù n aÖ
-Ök [v] n fÖ
-Ök a n sÖ
-Ök e pÖ
-Ök o pÖ
-Ök a rÖ
-Ök u rÖ
-Ök [v] rÖ
-Ök i tÖ
-Ök i t ðÖ
-Ök eù tÂ'Ö
-Ök i tsÖ
-Ök a wÖ
-Ök a ?Ö
-Ök a ÀÖ
-Ök i ÀÖ
-ÖkW aù [c]
-ÖkW a dÖ
-ÖkW aù dÖ
-ÖkW a ðÖ
-ÖkW aù ðÖ
-ÖkW a lÖ
-Öi n kW a lÖ
-ÖkW aù ÂÖ
-ÖkW eù rÖ
-ÖkW i rÖ
-ÖkW i SÖ
-ÖkW a tÂ'Ö
-ÖkW aù tÂ'Ö
-ÖkW a ÀÖ
-Ä a&
-ÖÄ a bÖ
-ÖÄ [v] bÖ
-ÖÄ a fÖ
-Ä o ÄÖ
-Ä où ÄÖ
-Ä a hÖ
-ÖÄ a hÖ
-ÖÄ aù ðÖ
-ÖÄ [v] ðÖ
-ÖÄ [v] ðÖ
-ÖÄ e l fÖ
-ÖÄ a ÂÖ
-ÖÄ i mÖ
-ÖÄ [v] nÖ
-ÖÄ [v] NÖ
-ÖÄ i [c]Ö
-ÖÄ u n tsÖ
-ÖÄ u n tÖ
-ÖÄ a pÖ
-ÖÄ a rÖ
-ÖÄ [vù] rÖ
-ÖÄ aù t'Ö
-ÖÄ o xWÖ
-ÖÄ aù ÀÖ
-ÖÄ aù ÀÖ
-ÄW a
-ÖÄW [v] bÖ
-ÖÄW a lÖ
-ÖÄW i nÖ
-ÖÄW a pÖ
-ÖÄW aù pÖ
-ÖÄW aù pÖ
-ÖÄW a xÖ
-ÖÄW aù xÖ
-ÖÄW eù xÖ
-ÖÄW [v] yÖ
-x a bÖ
-Öx a dLÖ
-Öx a fÖ
-Öx a hÖ
-Öx a jÖ
-Öx a lÖ
-Öx ié ÂÖ
-Öx o ÂÖ
-Öx a [c]Ö
-Öx a pÖ
-Öx où rÖ
-Öx a sÖ
-Öx i s'Ö
-x i SÖ
-x a y n zÖ
-Öx a ÀÖ
-xWÖ
-ÖxW a lÖ
-ÖxW aù lÖ
-ÖxW [v] nÖ
-ÖxW a rÖ
-ÖxW [v] rÖ
-ÖxW aù rÖ
-ÖxW i rÖ
-ÖxW aù tÖ
-ÖxW a y lÖ
-k' a bÖ
-Ök' a bÖ
-Ök' i bÖ
-Ök' a [c]Ö
-Ök' a dÖ
-Ök' a& dLÖ
-Ök' a fÖ
-Ök' aù fÖ
-Ök' a hÖ
-Ök' e ðÖ
-Ök' a jÖ
-Ök' a lÖ
-Ök' u mÖ
-Ök uù mÖ
-Ök' [v] [c]Ö
-Ök' où NÖ
-Ök' a rÖ
-Ök' a rÖ
-Ök' [vù] rÖ
-Ök' [vù] rÖ
-Ök' aù sÖ
-k' o sÖ
-Ök' eù s'Ö
-Ök' [vù] tÖ
-Ök' a t'Ö
-Ök' u tÂ'Ö
-Ök' e yÖ
-Ök' u ?Ö
-Ök' o ÀÖ
-ÖkW' [v]
-Öa kW'Ö
-ÖkW'Ö
-ÖkW' a dLÖ
-ÖkW' a ðÖ
-ÖkW' a lÖ
-ÖkW' a lÖ
-ÖkW' [v] lÖ
-ÖkW' [v] l fÖ
-ÖkW' a ÂÖ
-ÖkW' a mÖ
-ÖkW' a nÖ
-ÖkW' a n ðÖ
-ÖkW' [v] rÖ
-ÖkW' aù t'Ö
-ÖkW' aù tÂ'Ö
-ÖkW' aù y t'Ö
-ÖkW' a zÖ
-Ödz a cþÖ
-Ödz aù dLÖ
-Ödz aù ÄÖ
-Ödz [v] k'Ö
-Ödz a mÖ
-Ödz a rÖ
-Ödz i xWÖ
-Ödz a ?Ö
-Öj a bÖ
-Öj a fÖ
-Öj e kÖ
-j o k'Ö
-Öj où lÖ
-Öj u lÖ
-Öj o y ?Ö
+k [v] c&#597
+k a&#720 c&#597'
+k [v&#720] f
+k a &#295
+k a l
+k [v] l
+k o l
+k u l
+k o &#620
+k a m
+k u m
+k u&#720 n a
+k [v] n f
+k a n s
+k e p
+k o p
+k a r
+k u r
+k [v] r
+k i t
+k i t &#295
+k e&#720 t&#620'
+k i ts
+k a w
+k a &#660
+k a &#661
+k i &#661
+k&#695 a&#720 [c]
+k&#695 a d
+k&#695 a&#720 d
+k&#695 a &#295
+k&#695 a&#720 &#295
+k&#695 a l
+i n k&#695 a l
+k&#695 a&#720 &#620
+k&#695 e&#720 r
+k&#695 i r
+k&#695 i &#643
+k&#695 a t&#620'
+k&#695 a&#720 t&#620'
+k&#695 a &#661
+&#611 a&
+&#611 a b
+&#611 [v] b
+&#611 a f
+&#611 o &#611
+&#611 o&#720 &#611
+&#611 a h
+&#611 a h
+&#611 a&#720 &#295
+&#611 [v] &#295
+&#611 [v] &#295
+&#611 e l f
+&#611 a &#620
+&#611 i m
+&#611 [v] n
+&#611 [v] &#331
+&#611 i [c]
+&#611 u n ts
+&#611 u n t
+&#611 a p
+&#611 a r
+&#611 [v&#720] r
+&#611 a&#720 t'
+&#611 o x&#695
+&#611 a&#720 &#661
+&#611 a&#720 &#661
+&#611&#695 a
+&#611&#695 [v] b
+&#611&#695 a l
+&#611&#695 i n
+&#611&#695 a p
+&#611&#695 a&#720 p
+&#611&#695 a&#720 p
+&#611&#695 a x
+&#611&#695 a&#720 x
+&#611&#695 e&#720 x
+&#611&#695 [v] y
+x a b
+x a d&#622
+x a f
+x a h
+x a j
+x a l
+x &#238 &#620
+x o &#620
+x a [c]
+x a p
+x o&#720 r
+x a s
+x i s'
+x i &#643
+x a y n z
+x a &#661
+x&#695
+x&#695 a l
+x&#695 a&#720 l
+x&#695 [v] n
+x&#695 a r
+x&#695 [v] r
+x&#695 a&#720 r
+x&#695 i r
+x&#695 a&#720 t
+x&#695 a y l
+k' a b
+k' a b
+k' i b
+k' a [c]
+k' a d
+k' a& d&#622
+k' a f
+k' a&#720 f
+k' a h
+k' e &#295
+k' a j
+k' a l
+k' u m
+k u&#720 m
+k' [v] [c]
+k' o&#720 &#331
+k' a r
+k' a r
+k' [v&#720] r
+k' [v&#720] r
+k' a&#720 s
+k' o s
+k' e&#720 s'
+k' [v&#720] t
+k' a t'
+k' u t&#620'
+k' e y
+k' u &#660
+k' o &#661
+k&#695' [v]
+a k&#695'
+k&#695'
+k&#695' a d&#622
+k&#695' a &#295
+k&#695' a l
+k&#695' a l
+k&#695' [v] l
+k&#695' [v] l f
+k&#695' a &#620
+k&#695' a m
+k&#695' a n
+k&#695' a n &#295
+k&#695' [v] r
+k&#695' a&#720 t'
+k&#695' a&#720 t&#620'
+k&#695' a&#720 y t'
+k&#695' a z
+dz a c&#597
+dz a&#720 d&#622
+dz a&#720 &#611
+dz [v] k'
+dz a m
+dz a r
+dz i x&#695
+dz a &#660
+j a b
+j a f
+j e k
+j o k'
+j o&#720 l
+j u l
+j o y &#660
 [c] i
-Ö[c] i ÄÖ
-Öj a ðÖ
-Öd z i ðÖ
-[c] ÖðÖ
-Ö[c] aù lÖ
-Öj aù mÖ
-Öj [v] rÖ
-Ödz [v] rÖ
-Ö[v] a wÖ
-Ö[v] aù wÖ
-[v] i ?Ö
-Ödz [v] ÀÖ
-Öj [v] ÀÖ
-ÖtsÖ ÖtsÖ
-a tsÖ
-i tsÖ
-Öts [v] lÖ
-ts [v] mÖ
-Öts a rÖ
-Öts u rÖ
-Öcþ a bÖ
-cþ e e cþÖ
-Öcþ a gÖ
-Öcþ aù kÖ
-Öcþ i lÖ
-Öcþ a rÖ
-Ö[c] aù bÖ
-Ö[v] o bÖ
-Ö[c] u bÖ
-Ö[c] a bÖ
-Ö[v] a gÖ
-Ö[c] a gÖ
-Öts [v] k'Ö
-Öcþ [v] k'Ö
-Ö[c] où nÖ
-[c] uù mÖ
-Ö[c] a NÖ
-[c] a nÖ
-Ö[c] a rÖ
-Ö[c] i rÖ
-ÖS a bÖ
-ÖS o bÖ
-ÖS a dÖ
-ÖS où fÖ
-ÖS a ðÖ
-ÖS où ðÖ
-ÖS o kÖ
-ÖS i kWÖ
-ÖS u [c']Ö
-ÖS uù [k]Ö
-ÖS aù lÖ
-ÖS u lÖ
-Ös uù lÖ
-ÖS u nÖ
-ÖS e NÖ
-ÖS a pÖ
-ÖS aù pÖ
-ÖS u p'Ö
-ÖS e rÖ
-ÖS où rÖ
-ÖS aù w dÖ
-ÖS a yÖ
-ÖS eù ÀÖ
-ÖS [v] ÀÖ
-Ös' e dÖ
-Ös' i gÖ
-Ös' uù [c]Ö
-Ös' a hÖ
-Ös' i [c']Ö
-Ös' a mÖ
-Ös' iù [k']Ö
-Ös' eù rÖ
-Ös' [v] tÖ
-Ös' a tÖ
-Ös' a wÖ
-Ös' i wÖ
-Ös' a ?Ö
-Ös' [v] ?Ö
-Ös' i ÀÖ
-s' i ÀÖ
-Öcþ' u bÖ
-Öcþ' u fÖ
-Öcþ' [v] fÖ
-cþ' o h rÖ
-cþ' o h rÖ
-Öcþ' a ðÖ
-Öcþ' a ðÖ
-Öcþ' [vù] kÖ
-cþ' i k' lÖ
-Öcþ' i lÖ
-cþ' [v] l mÖ
-Öcþ' aù mÖ
-Öcþ' e mÖ
-Öcþ' iù nÖ
-Öcþ' e pÖ
-Öcþ' [v] pÖ
-Öcþ' a rÖ
-Öcþ' [v] rÖ
-cþ' i r fÖ
-Öcþ' i r fÖ
-Öcþ' e y gÖ
-Öcþ' i ?Ö
-Öcþ' iù ?Ö
-Öcþ' e ÀÖ
-m Ös
-Öm [v] Öm aÖ
-a mÖ
-Öi mÖ
+[c] i &#611
+j a &#295
+d z i &#295
+[c] &#295
+[c] a&#720 l
+j a&#720 m
+j [v] r
+dz [v] r
+[v] a w
+[v] a&#720 w
+[v] i &#660
+dz [v] &#661
+j [v] &#661
+ts ts
+a ts
+i ts
+ts [v] l
+ts [v] m
+ts a r
+ts u r
+c&#597 a b
+c&#597 e e c&#597
+c&#597 a g
+c&#597 a&#720 k
+c&#597 i l
+c&#597 a r
+[c] a&#720 b
+[v] o b
+[c] u b
+[c] a b
+[v] a g
+[c] a g
+ts [v] k'
+c&#597 [v] k'
+[c] o&#720 n
+[c] u&#720 m
+[c] a &#331
+[c] a n
+[c] a r
+[c] i r
+&#643 a b
+&#643 o b
+&#643 a d
+&#643 o&#720 f
+&#643 a &#295
+&#643 o&#720 &#295
+&#643 o k
+&#643 i k&#695
+&#643 u [c']
+&#643 u&#720 [k]
+&#643 a&#720 l
+&#643 u l
+s u&#720 l
+&#643 u n
+&#643 e &#331
+&#643 a p
+&#643 a&#720 p
+&#643 u p'
+&#643 e r
+&#643 o&#720 r
+&#643 a&#720 w d
+&#643 a y
+&#643 e&#720 &#661
+&#643 [v] &#661
+s' e d
+s' i g
+s' u&#720 [c]
+s' a h
+s' i [c']
+s' a m
+s' i&#720 [k']
+s' e&#720 r
+s' [v] t
+s' a t
+s' a w
+s' i w
+s' a &#660
+s' [v] &#660
+s' i &#661
+s' i &#661
+c&#597' u b
+c&#597' u f
+c&#597' [v] f
+c&#597' o h r
+c&#597' o h r
+c&#597' a &#295
+c&#597' a &#295
+c&#597' [v&#720] k
+c&#597' i k' l
+c&#597' i l
+c&#597' [v] l m
+c&#597' a&#720 m
+c&#597' e m
+c&#597' i&#720 n
+c&#597' e p
+c&#597' [v] p
+c&#597' a r
+c&#597' [v] r
+c&#597' i r f
+c&#597' i r f
+c&#597' e y g
+c&#597' i &#660
+c&#597' i&#720 &#660
+c&#597' e &#661
+m s
+m [v] m a
+a m
+i m
 m a
 m i
-Öm aÖ
-Öm a cþÖ
-Öm aù cþÖ
-Öm i cþÖ
-Öm où [c]Ö
-Öm a cþ'Ö
-Öm a dÖ
-Öm aù dÖ
-Öm où dzÖ
-Öm u ÄWÖ
-Öm [v] a hÖ
-Öm i ðÖ
-Öm aù ðÖ
-Öm [v] jÖ
-Öm a kÖ
-Öm aù [k]Ö
-Öm a lÖ
-m iù lÖ
-Öm a nÖ
-Öm [v] nÖ
-Öm a [c]Ö
-Öm a [ø]Ö
-Öm a rÖ
-Öm a rÖ
-Öm [v] rÖ
-Öm [v] rÖ
-Öm u rÖ
-Öm a sÖ
-Öm aù t'Ö
-Öm a tÂ'Ö
-m où tsÖ
-Öm aù wÖ
-Öm a xWÖ
-Öm o xÖ
-Öm [v] ?Ö
-Öm [v] ?Ö
-Öm [v] ?Ö
-Öm aù ÀÖ
-Öm [v] ÀÖ
+m a
+m a c&#597
+m a&#720 c&#597
+m i c&#597
+m o&#720 [c]
+m a c&#597'
+m a d
+m a&#720 d
+m o&#720 dz
+m u &#611&#695
+m [v] a h
+m i &#295
+m a&#720 &#295
+m [v] j
+m a k
+m a&#720 [k]
+m a l
+m i&#720 l
+m a n
+m [v] n
+m a [c]
+m a [&#626]
+m a r
+m a r
+m [v] r
+m [v] r
+m u r
+m a s
+m a&#720 t'
+m a t&#620'
+m o&#720 ts
+m a&#720 w
+m a x&#695
+m o x
+m [v] &#660
+m [v] &#660
+m [v] &#660
+m a&#720 &#661
+m [v] &#661
 n e e
 n i
-Ön a bÖ
-Ön [v] fÖ
-Ön [v] gÖ
-Ön u gWÖ
-Ön e hÖ
-Ön o hÖ
-Ön i h
-Ön eù ðÖ
-Ön iù ðÖ
-Ön i jÖ
-Ön i kWÖ
-Ön o k'Ö
-Ön uù k'Ö
-Ön [v] mÖ
-Ön aù tÂ'Ö
-Ön u zÖ
-Ön a ?Ö
-Ön aù ?Ö
-Ön u ?Ö
-Ön a ÀÖ
-Ön [vù] ÀÖ
-Ön o ÀÖ
-ÖN o cþ'Ö
-ÖN e dÖ
-ÖN [v] dLÖ
-N [v] lÖ
-ÖN a ÂÖ
-ÖN i ÂÖ
-ÖN o mÖ
-N aù nÖ
-ÖN aù t'Ö
-ÖN iù t'Ö
-ÖN aù wÖ
-ÖN iù w rÖ
-N a À wÖ
-ÖNW a ÂÖ
-ÖNW aù ÂÖ
-Öø i ðÖ
-Öø uù k'Ö
-Öø e rÖ
-Öø i rÖ
-Öø [vù] t'Ö
-Öø a wÖ
-Öø a wÖ
-Öø a w rÖ
-Öø o xWÖ
-Öø a yÖ
-Öø a [c]Ö
-ø a ?Ö
-Öø i ÀÖ
-Ök' a øÖ
-Öz [v] øÖ
-Ö[n] a hÖ
-Ö[n] o hÖ
-Ö[n] a xWÖ
-ÖN [v] p'Ö
-ÖÀ a bÖ
-ÖÀ o bÖ
-ÖÀ u cþÖ
-ÖÀ a cþ'Ö
-À i dÖ
-À i dÖ
-ÖÀ u dLÖ
-ÖÀ u dLÖ
-ÖÀ uù dLÖ
-ÖÀ a dzÖ
-ÖÀ aù fÖ
-ÖÀ [v] fÖ
-ÖÀ a gÖ
-À aù gÖ
-ÖÀ [v] jÖ
-ÖÀ aù [k]Ö
-ÖÀ [v] k'Ö
-ÖÀ a lÖ
-À a lÖ
-ÖÀ i lÖ
-ÖÀ aù mÖ
-ÖÀ i mÖ
-ÖÀ où mÖ
-ÖÀ a [c]Ö
-ÖÀ a nÖ
-ÖÀ aù nÖ
-ÖÀ aù nÖ
-ÖÀ o nÖ
-ÖÀ [v] NÖ
-ÖÀ a n ÄWÖ
-ÖÀ e NÖ
-ÖÀ [v] pÖ
-ÖÀ a rÖ
-À a r fÖ
-ÖÀ i rÖ
-ÖÀ [v] rÖ
-À uù rÖ
-ÖÀ i sÖ
-ÖÀ a s'Ö
-ÖÀ [v] SÖ
-ÖÀ [v] tÖ
-ÖÀ a t'Ö
-ÖÀ a tÂ'Ö
-ÖÀ a tsÖ
-ÖÀ i tsÖ
-ÖÀ a y gÖ
-ÖÀ u zÖ
-ÖÀ a ÀÖ
-Ö? [vù] bÖ
-Ö? [v] b zÖ
-Ö? i bÖ
-Ö? a dLÖ
-Ö? uù fÖ
-Ö? a [c]Ö
-Ö? a ÄÖ
-Ö? aù ÄÖ
-Ö? a hÖ
-Ö? aù hÖ
-Ö? aù kWÖ
-Ö? a lÖ
-Ö? i lÖ
-Ö? [v] lÖ
-Ö? o ÂÖ
-Ö? a mÖ
-Ö? a mÖ
-? [v] nÖ
-[v] nÖ
-? [v] n nÖ
-[v] nùÖ
-? i n sÖ
-? [v] n tÖ
-[v] n tÖ
-Ö? a n xWÖ
-Ö? a rÖ
-Ö? a r k'Ö
-Ö? a SÖ
-Ö? a a tÖ
-? a tsÖ
-Ö? a wÖ
-Ö? aù y SÖ
-Ö? a zÖ
-Ö? a zÖ
-Öð [v] bÖ
-Öð aù bÖ
-Öð a cþÖ
-Öð u bÖ
-Öð a cþ'Ö
-Öð e dÖ
-Öð u dLÖ
-Öð uù dLÖ
-Öð a fÖ
-Öð a ÄÖ
-Öð eù [k]Ö
-Öð [v] mÖ
-Öð a mÖ
-Öð a mÖ
-Öð [v] nÖ
-Öð [v] n kÖ
-Öð o nÖ
-Öð uù nÖ
-Öð [vù] nÖ
-Öð a pÖ
-Öð u pÖ
-Öð uù pÖ
-Öð a p'Ö
-Öð e rÖ
-Öð a sÖ
-Öð [v] tÂ'Ö
-Öð a wÖ
-Öð [v] yÖ
-Öð aù zÖ
-Öð i zÖ
-Öð o zÖ
-Öð o ?Ö
-Öð e ÀÖ
-Öh eù ÀÖ
-hÖ
-h aù
-Öh uÖ
-Öh uùÖ
-Öh a bÖ
-Öh aù dÖ
-Öh i dÖ
-Öh iù dÖ
-Öh [v] dÖ
-Öh o jÖ
-Öh [v] lÖ
-h [v] lÖ
-Öh a lÖ
-Öh eù lÖ
-Öh a mÖ
-Öh a mÖ
-Öh aù mÖ
-Öh o mÖ
-Öh uù mÖ
-Öh a pÖ
-Öh i p'Ö
-Öh u p'Ö
-h a rÖ
-Öh a rÖ
-Öh aù rÖ
-Öh a rÖ
-Öh [v] rÖ
-Öh u rÖ
-Öh aù sÖ
-h aù s'Ö
-Öh e s'Ö
-Öh a t'Ö
-Öh aù t'Ö
-Öh a tÂ'Ö
-Öh a y s'Ö
-h a zÖ
-Öh où zÖ
-Öh eù ?Ö
-Öh où ?Ö
-Öh a ÀÖ
+n a b
+n [v] f
+n [v] g
+n u g&#695
+n e h
+n o h
+n i h
+n e&#720 &#295
+n i&#720 &#295
+n i j
+n i k&#695
+n o k'
+n u&#720 k'
+n [v] m
+n a&#720 t&#620'
+n u z
+n a &#660
+n a&#720 &#660
+n u &#660
+n a &#661
+n [v&#720] &#661
+n o &#661
+&#331 o c&#597'
+&#331 e d
+&#331 [v] d&#622
+&#331 [v] l
+&#331 a &#620
+&#331 i &#620
+&#331 o m
+&#331 a&#720 n
+&#331 a&#720 t'
+&#331 i&#720 t'
+&#331 a&#720 w
+&#331 i&#720 w r
+&#331 a &#661 w
+&#331&#695 a &#620
+&#331&#695 a&#720 &#620
+&#626 i &#295
+&#626 u&#720 k'
+&#626 e r
+&#626 i r
+&#626 [v&#720] t'
+&#626 a w
+&#626 a w
+&#626 a w r
+&#626 o x&#695
+&#626 a y
+&#626 a [c]
+&#626 a &#660
+&#626 i &#661
+k' a &#626
+z [v] &#626
+[n] a h
+[n] o h
+[n] a x&#695
+&#331 [v] p'
+&#661 a b
+&#661 o b
+&#661 u c&#597
+&#661 a c&#597'
+&#661 i d
+&#661 i d
+&#661 u d&#622
+&#661 u d&#622
+&#661 u&#720 d&#622
+&#661 a dz
+&#661 a&#720 f
+&#661 [v] f
+&#661 a g
+&#661 a&#720 g
+&#661 [v] j
+&#661 a&#720 [k]
+&#661 [v] k'
+&#661 a l
+&#661 a l
+&#661 i l
+&#661 a&#720 m
+&#661 i m
+&#661 o&#720 m
+&#661 a [c]
+&#661 a n
+&#661 a&#720 n
+&#661 a&#720 n
+&#661 o n
+&#661 [v] &#331
+&#661 a n &#611&#695
+&#661 e &#331
+&#661 [v] p
+&#661 a r
+&#661 a r f
+&#661 i r
+&#661 [v] r
+&#661 u&#720 r
+&#661 i s
+&#661 a s'
+&#661 [v] &#643
+&#661 [v] t
+&#661 a t'
+&#661 a t&#620'
+&#661 a ts
+&#661 i ts
+&#661 a y g
+&#661 u z
+&#661 a &#661
+&#660 [v&#720] b
+&#660 [v] b z
+&#660 i b
+&#660 a d&#622
+&#660 u&#720 f
+&#660 a [c]
+&#660 a &#611
+&#660 a&#720 &#611
+&#660 a h
+&#660 a&#720 h
+&#660 a&#720 k&#695
+&#660 a l
+&#660 i l
+&#660 [v] l
+&#660 o &#620
+&#660 a m
+&#660 a m
+&#660 [v] n
+[v] n
+&#660 [v] n n
+[v] n&#720
+&#660 i n s
+&#660 [v] n t
+[v] n t
+&#660 a n x&#695
+&#660 a r
+&#660 a r k'
+&#660 a &#643
+&#660 a a t
+&#660 a ts
+&#660 a w
+&#660 a&#720 y &#643
+&#660 a z
+&#660 a z
+&#295 [v] b
+&#295 a&#720 b
+&#295 a c&#597
+&#295 u b
+&#295 a c&#597'
+&#295 e d
+&#295 u d&#622
+&#295 u&#720 d&#622
+&#295 a f
+&#295 a &#611
+&#295 e&#720 [k]
+&#295 [v] m
+&#295 a m
+&#295 a m
+&#295 [v] n
+&#295 [v] n k
+&#295 o n
+&#295 u&#720 n
+&#295 [v&#720] n
+&#295 a p
+&#295 u p
+&#295 u&#720 p
+&#295 a p'
+&#295 e r
+&#295 a s
+&#295 [v] t&#620'
+&#295 a w
+&#295 [v] y
+&#295 a&#720 z
+&#295 i z
+&#295 o z
+&#295 o &#660
+&#295 e &#661
+h e&#720 &#661
+h
+h a&#720
+h u
+h u&#720
+h a b
+h a&#720 d
+h i d
+h i&#720 d
+h [v] d
+h o j
+h [v] l
+h [v] l
+h a l
+h e&#720 l
+h a m
+h a m
+h a&#720 m
+h o m
+h u&#720 m
+h a p
+h i p'
+h u p'
+h a r
+h a r
+h a&#720 r
+h a r
+h [v] r
+h u r
+h a&#720 s
+h a&#720 s'
+h e s'
+h a t'
+h a&#720 t'
+h a t&#620'
+h a y s'
+h a z
+h o&#720 z
+h e&#720 &#660
+h o&#720 &#660
+h a &#661
 l a
-Öl [v]Ö
-Öl aùÖ
+l [v]
+l a&#720
 l o
-Öl i bÖ
-Öl iù bÖ
-Öl i bÖ
-l i bÖ
-Öi bÖ
-Öl a bÖ
-Öl a fÖ
-Öl e fÖ
-Öl e g ?Ö
-Öl a gWÖ
-Öl aù gWÖ
-Öl aù ÄÖ
-Öl [v] ÄÖ
-Öl o hÖ
-Öl e ðÖ
-Öl eù ðÖ
+l i b
+l i&#720 b
+l i b
+l i b
+i b
+l a b
+l a f
+l e f
+l e g &#660
+l a g&#695
+l a&#720 g&#695
+l a&#720 &#611
+l [v] &#611
+l o h
+l e &#295
+l e&#720 &#295
 l a [v]
-Öl a kÖ
-Öl a k'Ö
-Öl a k'Ö
-Öl [v] mÖ
-Öl e p'Ö
-Öl aù sÖ
-Öl i s'Ö
-Öl a SÖ
-ÖlÖ Öt'Ö
-Öl aù wÖ
-Öl aù xÖ
-Öl o xWÖ
-Öl a y gWÖ
-Öl i ÀÖ
-Öl i À bÖ
-dL [v]
-ÖdL aÖ
-ÖdL [v] bÖ
-ÖdL [v] b ÀÖ
-ÖdL i bÖ
-ÖdL [v] fÖ
-ÖdL [v] fÖ
-ÖdL e gÖ
-ÖdL o gÖ
-ÖdL [vù] gWÖ
-ÖdL a hÖ
-ÖdL a ð
-ÖdL [v] kWÖ
-ÖdL eù k'Ö
-ÖdL o kW'Ö
-ÖdL u mÖ
-ÖdL [v] p'Ö
-ÖdL a p'Ö
-ÖdL [v] p'Ö
-ÖdL i rÖ
-ÖdL [v] rÖ
-ÖdL a [c]Ö
-ÖdL a ?Ö
-ÖdL a& ?Ö
-ÖdL iù ?Ö
-ÖdL [v] ÀÖ
-Öaù ÂÖ
-ÖÂ eÖ
-ÖÂ a bÖ
-ÖÂ a fÖ
-ÖÂ u fÖ
-ÖÂ uù fÖ
-ÖÂ a gÖ
-ÖÂ a& ÄÖ
-ÖÂ eù hÖ
-ÖÂ eù hÖ
-ÖÂ a ðÖ
-ÖÂ iù ðÖ
-ÖÂ aù kWÖ
-ÖÂ i kWÖ
-ÖÂ a kW'Ö
-ÖÂ a mÖ
-ÖÂ aù mÖ
-ÖÂ uù mÖ
-ÖÂ i NÖ
-ÖÂ [v] pÖ
-ÖÂ [v] p'Ö
-ÖÂ u p'Ö
-ÖÂ a rÖ
-ÖÂ a wÖ
-ÖÂ o wÖ
-ÖÂ a ?Ö
-ÖÂ aù ?Ö
-ÖÂ o ?Ö
-ÖÂ [v] ? rÖ
-ÖÂ e ÀÖ
-Â [v] À fÖ
-ÖtÂ' a bÖ
-ÖtÂ' [v] bÖ
-ÖtÂ' a bÖ
-ÖtÂ' a fÖ
-ÖtÂ' eù ÄÖ
-ÖtÂ' iù ÄWÖ
-ÖtÂ' i hÖ
-ÖtÂ' a ðÖ
-ÖtÂ' où ðÖ
-ÖtÂ' [v] kWÖ
-ÖtÂ' o k'Ö
-ÖtÂ' où k'Ö
-ÖtÂ' [v] kWÖ
-ÖtÂ' a lÖ
-ÖtÂ' a lÖ
-ÖtÂ' i lÖ
-ÖtÂ' [v] mÖ
-ÖtÂ' i nÖ
-ÖtÂ' [v] pÖ
-ÖtÂ' e tl'Ö
-ÖtÂ' a [c]Ö
-ÖtÂ' o wÖ
-ÖtÂ' u wÖ
-ÖtÂ' a yÖ
-ÖtÂ' a y NÖ
-ÖtÂ' i yÖ
-ÖtÂ' i zÖ
-ÖtÂ' [v] zÖ
-ÖtÂ' [v] zÖ
-ÖtÂ' o ?Ö
-ÖtÂ' a ÀÖ
-ÖtÂ' iù ÀÖ
-a rÖ
+l a k
+l a k'
+l a k'
+l [v] m
+l e p'
+l a&#720 s
+l i s'
+l a &#643
+l t'
+l a&#720 w
+l a&#720 x
+l o x&#695
+l a y g&#695
+l i &#661
+l i &#661 b
+d&#622 [v]
+d&#622 a
+d&#622 [v] b
+d&#622 [v] b &#661
+d&#622 i b
+d&#622 [v] f
+d&#622 [v] f
+d&#622 e g
+d&#622 o g
+d&#622 [v&#720] g&#695
+d&#622 a h
+d&#622 a &#295
+d&#622 [v] k&#695
+d&#622 e&#720 k'
+d&#622 o k&#695'
+d&#622 u m
+d&#622 [v] p'
+d&#622 a p'
+d&#622 [v] p'
+d&#622 i r
+d&#622 [v] r
+d&#622 a [c]
+d&#622 a &#660
+d&#622 a& &#660
+d&#622 i&#720 &#660
+d&#622 [v] &#661
+a&#720 &#620
+&#620 e
+&#620 a b
+&#620 a f
+&#620 u f
+&#620 u&#720 f
+&#620 a g
+&#620 a& &#611
+&#620 e&#720 h
+&#620 e&#720 h
+&#620 a &#295
+&#620 i&#720 &#295
+&#620 a&#720 k&#695
+&#620 i k&#695
+&#620 a k&#695'
+&#620 a m
+&#620 a&#720 m
+&#620 u&#720 m
+&#620 i &#331
+&#620 [v] p
+&#620 [v] p'
+&#620 u p'
+&#620 a r
+&#620 a w
+&#620 o w
+&#620 a &#660
+&#620 a&#720 &#660
+&#620 o &#660
+&#620 [v] &#660 r
+&#620 e &#661
+&#620 [v] &#661 f
+t&#620' a b
+t&#620' [v] b
+t&#620' a b
+t&#620' a f
+t&#620' e&#720 &#611
+t&#620' i&#720 &#611&#695
+t&#620' i h
+t&#620' a &#295
+t&#620' o&#720 &#295
+t&#620' [v] k&#695
+t&#620' o k'
+t&#620' o&#720 k'
+t&#620' [v] k&#695
+t&#620' a l
+t&#620' a l
+t&#620' i l
+t&#620' [v] m
+t&#620' i n
+t&#620' [v] p
+t&#620' e tl'
+t&#620' a [c]
+t&#620' o w
+t&#620' u w
+t&#620' a y
+t&#620' a y &#331
+t&#620' i y
+t&#620' i z
+t&#620' [v] z
+t&#620' [v] z
+t&#620' o &#660
+t&#620' a &#661
+t&#620' i&#720 &#661
+a r
 r [v]
-Ör aÖ
-Ör a wÖ
-Ör a bÖ
-Ör [v] bÖ
-Ör où bÖ
-Ör uù bÖ
-Ör [v] dÖ
-Ör [v] dLÖ
-Ör [v] fÖ
-Ör [v] gÖ
-Ör [v] gÖ
-Ör a ÄWÖ
-Ör [v] hÖ
-Ör u kÖ
-Ör i [k']Ö
-Ör e pÖ
-Ör i pÖ
-Ör a [v]Ö
-Ör e y bÖ
-r iù zÖ
-Ör u zÖ
-Ör u ?Ö
-Ör aù ÀÖ
-Ör aù ÀÖ
-w [v]Ö
-Öw eù bÖ
-Öw e cþÖ
-Öw a& cþ'Ö
-Öw i cþ'Ö
-Öw a dÖ
-Öw a dLÖ
-Öw a dLÖ
-Öw aù dLÖ
-Öw aù gÖ
-Öw aù gÖ
-Öw a ðÖ
-Öw a ðÖ
-Öw aù ðÖ
-Öw a jÖ
-Öw i jÖ
-Öw a kÖ
-Öw a [k']Ö
-Öw e k'Ö
-Öw [v] lÖ
-Öw i lÖ
-Öw a nÖ
-Öw a p'Ö
-Öw [v] rÖ
-w a rÖ
-Öw [v] rÖ
-Öw aù rÖ
-Öw i rÖ
-Öw i sÖ
-Öw i SÖ
-Öw e tl'Ö
-Öw i i tl'Ö
-Öw i [c]Ö
-Öw a xÖ
-Öw a y nÖ
-Öw a y sÖ
-w i zÖ
-Öw a ?Ö
-Öw aù ?Ö
-Öw aù ?Ö
-Öw a ÀÖ
-Öw a ÀÖ
-Öw aù ÀÖ
-Öy oÖ
-Öy a bÖ
-Öy e dÖ
-Öy u fÖ
-Öy a gWÖ
-Öy a hÖ
-Öy a kWÖ
-Öy aù kWÖ
-Öy a k'Ö
-Öy a lÖ
-Öy u ÂÖ
-y a mÖ
-Öy aù rÖ
-Öy a wÖ
-y a wÖ
-y a w rÖ
-y [v] xWÖ
-Öy aÖ
-Öy a ?Ö
-Öy u ?Ö
-Öy a ÀÖ
+r a
+r a w
+r a b
+r [v] b
+r o&#720 b
+r u&#720 b
+r [v] d
+r [v] d&#622
+r [v] f
+r [v] g
+r [v] g
+r a &#611&#695
+r [v] h
+r u k
+r i [k']
+r e p
+r i p
+r a [v]
+r e y b
+r i&#720 z
+r u z
+r u &#660
+r a&#720 &#661
+r a&#720 &#661
+w [v]
+w e&#720 b
+w e c&#597
+w a& c&#597'
+w i c&#597'
+w a d
+w a d&#622
+w a d&#622
+w a&#720 d&#622
+w a&#720 g
+w a&#720 g
+w a &#295
+w a &#295
+w a&#720 &#295
+w a j
+w i j
+w a k
+w a [k']
+w e k'
+w [v] l
+w i l
+w a n
+w a p'
+w [v] r
+w a r
+w [v] r
+w a&#720 r
+w i r
+w i s
+w i &#643
+w e tl'
+w i i tl'
+w i [c]
+w a x
+w a y n
+w a y s
+w i z
+w a &#660
+w a&#720 &#660
+w a&#720 &#660
+w a &#661
+w a &#661
+w a&#720 &#661
+y o
+y a b
+y e d
+y u f
+y a g&#695
+y a h
+y a k&#695
+y a&#720 k&#695
+y a k'
+y a l
+y u &#620
+y a m
+y a&#720 r
+y a w
+y a w
+y a w r
+y [v] x&#695
+y a
+y a &#660
+y u &#660
+y a &#661
 i
 y i
