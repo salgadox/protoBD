@@ -1,5 +1,30 @@
 <?php
 class Proto extends SQLite3 {
+      /**
+      Functions: 
+            Contructeurs: 
+                  __contruct()
+            
+            Functions to get info about the phonemes: 
+                  getId($phoneme)
+                  getLieu($phoneme)
+                  getMode($phoneme)
+                  estConsonne($phoneme)
+                  CV($phoneme)
+                  estVoise($phoneme)
+                  getInfoPhon($phoneme)
+                  estVoise($phoneme)
+                  getInfoPhon($phoneme)
+           
+            Function to get info from DB
+                  getAllLexemesBD()
+                  getAllLexemesById()
+                  getAllPhonemesDB()
+                  getAllPhonemesById()
+
+            Funtions to get info from file 
+
+      **/
       	function __construct() {
         	$this->open('test.db');
       	}
@@ -29,9 +54,9 @@ class Proto extends SQLite3 {
       		$sql = "SELECT consonant FROM phonemes WHERE phoneme =='".$phoneme."'";
 			$ret = $this->query($sql);
 			$rs= $ret->fetchArray(SQLITE3_ASSOC);
-			//echo "<p>phoneme: ". $phoneme. " consonne? ". $rs['consonant']."</p>";
 			return $rs['consonant'];
       	}
+
       	function CV($phoneme){
       		$tmp = $this->estConsonne($phoneme);
       		if ($tmp==0){
@@ -43,13 +68,13 @@ class Proto extends SQLite3 {
       		return "";//just in case...
       	}
 
-
       	function estVoise($phoneme){
       		$sql = "SELECT voisement FROM phonemes WHERE phoneme =='".$phoneme."'";
 			$ret = $this->query($sql);
 			$rs= $ret->fetchArray(SQLITE3_ASSOC);
 			return $rs['voisement'];
       	}
+
       	function getInfoPhon($phoneme){
       		echo "<table>";
       		echo "<tr> <th> phoneme: </th> <td>".$phoneme."</td> </tr>";
@@ -61,15 +86,61 @@ class Proto extends SQLite3 {
 			echo "</table>";
       	}
 
+            function getAllLexemesBD(){
+                  $sql = "SELECT transcription FROM lexeme" ;
+                  $ret = $this->query($sql);
+                  $lexeme = array();
+                  while($row = $ret->fetchArray(SQLITE3_ASSOC)){
+                         array_push($lexeme, $row['transcription']);
+                  };
+                  return $lexeme;
+            }
+
+            function getAllLexemesById($id){
+                  $sql = "SELECT transcription FROM lexeme WHERE langue_id == '".$id."'" ;
+                  $ret = $this->query($sql);
+                  $lexeme = array();
+                  while($row = $ret->fetchArray(SQLITE3_ASSOC)){
+                         array_push($lexeme, $row['transcription']);
+                  };
+                  return $lexeme;
+            }
+
+            function getAllPhonemesDB(){
+                 $arr = $this->getAllLexemesBD();
+                 $res = array();
+                 for ($i=0; $i < sizeof($arr) ; $i++) {
+                        $ex = explode(" ", $arr[$i]);
+                        for ($e=0; $e < sizeof($ex) ; $e++) { 
+                                array_push($res, $ex[$e]);
+                          }  
+                 }
+                 return $res;
+            }
+
+            function getAllPhonemesById($id){
+                 $arr = $this->getAllLexemesById($id);
+                 $res = array();
+                 for ($i=0; $i < sizeof($arr) ; $i++) {
+                        $ex = explode(" ", $arr[$i]);
+                        for ($e=0; $e < sizeof($ex) ; $e++) { 
+                                array_push($res, $ex[$e]);
+                          }  
+                 }
+                 return $res;
+            }
+            
 
       	function getGabaritLex($lexeme){
       		$phonList=explode(" ", $lexeme);
       		$gabarit = "";
       		for ($i=0; $i < sizeof($phonList) ; $i++) { 
+                        echo $phonList[$i];
       			$gabarit.=$this->CV(trim($phonList[$i]));
       		}
       		return $gabarit;
       	}
+
       	function getGabaritFile($file){
       		$mots = preg_split("/\n/", file_get_contents($file));
       		$gabarit = "";
@@ -82,77 +153,88 @@ class Proto extends SQLite3 {
       		return $gabarit ;
       	}
 
-      	function countLex($file){
-      		//this only works if we have an empty last line;
-      		return count(preg_split("/[\s]+/", file_get_contents($file)))-1;
-      	}
-      	
+            function getGabaritBD($donnees){
+                  $gabarit = "";
+                  for ($i=0; $i < sizeof($donnees); $i++) { 
+                        $gabarit .= $this->getGabaritLex($donnees[$i])."\n" ;
+                        }  
+                  
+                  return $gabarit;
+            }
 
-      	function remLastLine($file){
-      		$lines = file($file);
-      		$last = sizeof(($lines)-1);
-      		unset($lines[$last]);
-      		return count($mots=preg_split("/[\s]+/", file_get_contents($file)));	
-      	}
+            function getCleanLexArray($file){
+                  $mots = preg_split("/\n/", file_get_contents($file));
+                  for ($i=0; $i < sizeof($mots); $i++) { 
+                        if($mots[$i]==""){
+                              unset($mots[$i]) ;
+                        }
+                        
+                  }
+                  return $mots ;
+            }
 
+              function getCleanPhonArray($file){
+                  $mots = preg_split("/[\s]+/", file_get_contents($file));
+                  for ($i=0; $i < sizeof($mots); $i++) { 
+                        if($mots[$i]==""){
+                              unset($mots[$i]) ;
+                        }
+                        
+                  }
+                  return $mots ;
+            }
+
+            function countLex($file){
+                  $MotArr = $this->getCleanLexArray($file);
+                  return count($MotArr);
+            }
+            function conuntLexDB($donnees){
+                  return count($donnees);
+            }
+
+            function countTotalPhon($file){
+                  $MotArr = $this->getCleanPhonArray($file);
+                  return count($MotArr);
+            }
+
+            function countTotalPhonDB($donnees){
+                  return count($donnees);
+            }
+
+            function  countDiffPhon($file){
+                  $MotArr = $this->getCleanPhonArray($file);
+                 // $mots = preg_split("/[\s]+/", file_get_contents($file));
+                  return count(array_count_values($MotArr));
+            }
+
+             function countDiffPhonDB($donnees){
+                  return count(array_count_values($donnees));
+            }
+
+            function getDiffPhonDB($donnees){
+                  $MotArr = array_unique($donnees);
+                  $keys = array_keys($MotArr);
+                  $arr = array();
+                  for ($i=0; $i < sizeof($keys); $i++) { 
+                       array_push($arr, $MotArr[($keys[$i])]) ;
+                  }
+                  //print_r($arr);
+                  return $arr;
+
+            }
+
+            function getDiffPhon($file){
+                  $MotArr = array_unique($this->getCleanPhonArray($file));
+                  $keys = array_keys($MotArr);
+                  $arr = array();
+                  for ($i=0; $i < sizeof($keys); $i++) { 
+                       array_push($arr, $MotArr[($keys[$i])]) ;
+                  }
+                  //print_r($arr);
+                  return $arr;
+
+            }
    	}
-	
-	$db = new Proto();
-	$phoneme ='&#660';
-	$file = "public/uploads/aja_proto_transcrit.txt";
-	/**echo "phoneme_id: ".$db->getId($phoneme)."\n";
-	echo "lieu: ".$db->getLieu($phoneme)."\n";
-	echo "mode: ".$db->getMode($phoneme)."\n";
-	echo "est consonne? : ".$db->estConsonne($phoneme)."\n";
-	echo "est voise? : ".$db->estvoise($phoneme)."\n";
-	echo "est C : ".$db->CV($phoneme)."\n";
-	//echo "gabarit : ". $db->gabarit("m oo t");
-	echo "countLex : ". $db->countLex($file); **/
-	echo "getgabarit : ". $db->getGabaritFile($file);
-	$db->getInfoPhon($phoneme);
-
-   
-
-
-   if(!$db){
-      echo $db->lastErrorMsg();
-   } 
-
-
-Class Phonemes {
-	//declaration de variables
-	
-	public $phon; 
-	public $lieu;
-	public function __construct($phoneme){
-		//$this->lieu=;
-		$this->phon = $phoneme;
-		//$this->lieu = $lieu;
-	}
-	public function getPhon(){
-		return $this->phon;
-	}
-	public function getLieu($phon){
-		return parent::getLieu($phon);
-	}
-
-}
-/*
-echo "\n prueba phoneme class: \n";
-$p= new Phonemes("p");
-echo "phoneme: ".$p->getPhon()."\n";
-echo "lieu : ".$p->getLieu("p")."\n";
-/*if($phoneme == $b->getInfo()){*
-	echo "true";
-}else{echo "false";}*/
-
-
-/*$p= new Phonemes("p");
-echo $p->getPhon();
-$bPhon = new Phonemes($b,"Bi");
-echo $b->getPhon();
-*/
-
 
 
 	
