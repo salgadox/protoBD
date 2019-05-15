@@ -1,5 +1,5 @@
 <?php
-class MyDB extends SQLite3 {
+class Proto extends SQLite3 {
       	function __construct() {
         	$this->open('test.db');
       	}
@@ -29,8 +29,20 @@ class MyDB extends SQLite3 {
       		$sql = "SELECT consonant FROM phonemes WHERE phoneme =='".$phoneme."'";
 			$ret = $this->query($sql);
 			$rs= $ret->fetchArray(SQLITE3_ASSOC);
+			//echo "<p>phoneme: ". $phoneme. " consonne? ". $rs['consonant']."</p>";
 			return $rs['consonant'];
       	}
+      	function CV($phoneme){
+      		$tmp = $this->estConsonne($phoneme);
+      		if ($tmp==0){
+      			return 'V';
+      		}
+      		if($tmp==1){
+      			return 'C';
+      		}
+      		return "";//just in case...
+      	}
+
 
       	function estVoise($phoneme){
       		$sql = "SELECT voisement FROM phonemes WHERE phoneme =='".$phoneme."'";
@@ -38,7 +50,7 @@ class MyDB extends SQLite3 {
 			$rs= $ret->fetchArray(SQLITE3_ASSOC);
 			return $rs['voisement'];
       	}
-      	function getInfo($phoneme){
+      	function getInfoPhon($phoneme){
       		echo "<table>";
       		echo "<tr> <th> phoneme: </th> <td>".$phoneme."</td> </tr>";
       		echo "<tr> <th> phoneme ID: </th> <td>".$this->getId($phoneme)."</td> </tr>";
@@ -48,16 +60,57 @@ class MyDB extends SQLite3 {
       		echo "<tr> <th> voise </th> <td>".$this->estvoise($phoneme)."</td> </tr>";
 			echo "</table>";
       	}
+
+
+      	function getGabaritLex($lexeme){
+      		$phonList=explode(" ", $lexeme);
+      		$gabarit = "";
+      		for ($i=0; $i < sizeof($phonList) ; $i++) { 
+      			$gabarit.=$this->CV(trim($phonList[$i]));
+      		}
+      		return $gabarit;
+      	}
+      	function getGabaritFile($file){
+      		$mots = preg_split("/\n/", file_get_contents($file));
+      		$gabarit = "";
+      		for ($i=0; $i < sizeof($mots); $i++) { 
+      			if($mots[$i]!=""){
+      				$gabarit .= $this->getGabaritLex($mots[$i])."\n" ;
+      			}
+      			
+      		}
+      		return $gabarit ;
+      	}
+
+      	function countLex($file){
+      		//this only works if we have an empty last line;
+      		return count(preg_split("/[\s]+/", file_get_contents($file)))-1;
+      	}
+      	
+
+      	function remLastLine($file){
+      		$lines = file($file);
+      		$last = sizeof(($lines)-1);
+      		unset($lines[$last]);
+      		return count($mots=preg_split("/[\s]+/", file_get_contents($file)));	
+      	}
+
    	}
 	
-	$db = new MyDB();
-	$phoneme ="b";
-	echo "phoneme_id: ".$db->getId($phoneme)."\n";
+	$db = new Proto();
+	$phoneme ='&#660';
+	$file = "public/uploads/aja_proto_transcrit.txt";
+	/**echo "phoneme_id: ".$db->getId($phoneme)."\n";
 	echo "lieu: ".$db->getLieu($phoneme)."\n";
 	echo "mode: ".$db->getMode($phoneme)."\n";
 	echo "est consonne? : ".$db->estConsonne($phoneme)."\n";
 	echo "est voise? : ".$db->estvoise($phoneme)."\n";
-	$db->getInfo($phoneme);
+	echo "est C : ".$db->CV($phoneme)."\n";
+	//echo "gabarit : ". $db->gabarit("m oo t");
+	echo "countLex : ". $db->countLex($file); **/
+	echo "getgabarit : ". $db->getGabaritFile($file);
+	$db->getInfoPhon($phoneme);
+
    
 
 
