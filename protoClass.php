@@ -1,62 +1,62 @@
 <?php
 class Proto extends SQLite3 {
       /**
-      Functions: 
-            Contructeurs: 
-                  __contruct()
-            Funtions to get info about 'langue':
-                  getNameLang($id)
-                  getIdLang($name)
-                  getGeneralInfoID($id)
-
-            Functions Gabarits 
-                  getGabaritById($id)
-                  getDiffGabaritById($id)
-                  countDiffGabaritById($id){
-          
-            Funtions Infolieu/mode
-                  getLieuById($id)
-                  getModeById($id)
-                  getInfoLieu($id)
-                  getInfoMode($id)
-
-            Functions to get info about the phonemes: 
-                  getId($phoneme)
-                  getLieu($phoneme)
-                  getLieuLexArray($lexeme)
-                  getLieuLex($lexeme)
-                  getMode($phoneme)
-                  getModeLex($lexeme)
-                  getModeLexArray($lexeme)
-                  estConsonne($phoneme)
-                  CV($phoneme)
-                  estVoise($phoneme)
-                  getInfoPhon($phoneme)
-                  estVoise($phoneme)
-                  getInfoPhon($phoneme)
-           
-            Function to get info from DB
-                  getAllLexemesBD()
-                  getAllLexemesById($id)
-                  getAllPhonemesDB()
-                  getAllPhonemesById($id)
-                  getAllPhonsPerLex($lexeme)
-                  getGabaritLex($lexeme)
-                  getGabaritBD($donnees)
-                  conuntLexDB($donnees)
-                  countTotalPhonDB($donnees)
-                  countDiffPhonDB($donnees)
-                  getDiffPhonDB($donnees)
-
-            Funtions to get info from file
-                  getGabaritFile($file)
-                  getCleanLexArray($file)
-                  getCleanPhonArray($file)
-                  countLex($file)
-                  countTotalPhon($file)
-                  countDiffPhon($file)
-                  getDiffPhon($file) 
-
+      *Functions: 
+      *      Contructeurs: 
+      *            __contruct()
+      *      Funtions to get info about 'langue':
+      *            getNameLang($id)
+      *            getIdLang($name)
+      *            getGeneralInfoID($id)
+      *
+      *      Functions Gabarits 
+      *            getGabaritById($id)
+      *            getDiffGabaritById($id)
+      *            countDiffGabaritById($id){
+      *    
+      *      Funtions Infolieu/mode
+      *            getLieuById($id)
+      *            getModeById($id)
+      *            getInfoLieu($id)
+      *            getInfoMode($id)
+      * 
+      *      Functions to get info about the phonemes: 
+      *            getId($phoneme)
+      *            getLieu($phoneme)
+      *            getLieuLexArray($lexeme)
+      *            getLieuLex($lexeme)
+      *            getMode($phoneme)
+      *            getModeLex($lexeme)
+      *            getModeLexArray($lexeme)
+      *            estConsonne($phoneme)
+      *            CV($phoneme)
+      *            estVoise($phoneme)
+      *            getInfoPhon($phoneme)
+      *            estVoise($phoneme)
+      *            getInfoPhon($phoneme)
+      *     
+      *      Function to get info from DB
+      *            getAllLexemesBD()
+      *            getAllLexemesById($id)
+      *            getAllPhonemesDB()
+      *            getAllPhonemesById($id)
+      *            getAllPhonsPerLex($lexeme)
+      *            getGabaritLex($lexeme)
+      *            getGabaritBD($donnees)
+      *            conuntLexDB($donnees)
+      *            countTotalPhonDB($donnees)
+      *            countDiffPhonDB($donnees)
+      *            getDiffPhonDB($donnees)
+      *
+      *      Funtions to get info from file
+      *            getGabaritFile($file)
+      *            getCleanLexArray($file)
+      *            getCleanPhonArray($file)
+      *            countLex($file)
+      *            countTotalPhon($file)
+      *            countDiffPhon($file)
+      *            getDiffPhon($file) 
+      *
       **/
       	function __construct() {
         	$this->open('test.db');
