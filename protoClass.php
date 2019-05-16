@@ -19,6 +19,7 @@ class Proto extends SQLite3 {
       *            getModeById($id)
       *            getInfoLieu($id)
       *            getInfoMode($id)
+      *            getGabLieuMode($id)
       * 
       *      Functions to get info about the phonemes: 
       *            getId($phoneme)
@@ -61,6 +62,16 @@ class Proto extends SQLite3 {
       	function __construct() {
         	$this->open('test.db');
       	}
+
+            function getAllLangues(){
+                  $sql = "SELECT langue_nom FROM langues" ;
+                  $ret = $this->query($sql);
+                  $langues = array();
+                  while($row = $ret->fetchArray(SQLITE3_ASSOC)){
+                         array_push($langues, $row['langue_nom']);
+                  };
+                  return $langues;
+            }
 
             function getNameLang($id){
                   $sql = "SELECT langue_nom FROM langues WHERE langue_id =='".$id."'";
@@ -132,6 +143,20 @@ class Proto extends SQLite3 {
                   }
                   echo "</table>";
                   
+            }
+
+            function getGabLieuMode($id){
+                  $lexemes = $this->getAllLexemesById($id);
+                  $gabarits = $this->getGabaritBD($lexemes);
+                  $lieu = $this->getInfoLieu($id);
+                  $mode = $this->getInfoMode($id);
+                  echo "<table>";
+                  echo "<tr> <th> Langue: </th> <td>".$this->getNameLang($id)."</td> </tr>";
+                  for ($i=0; $i < sizeof($gabarits); $i++) { 
+                        echo "<tr> <th> ".$lexemes[$i] ." </th> <td>".$gabarits[$i]."</td> <td>".$lieu[$i]."</td> <td>".$mode[$i]."</td>  </tr>";
+                  }
+                  echo "</table>";
+
             }
 
 
