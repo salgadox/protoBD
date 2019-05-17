@@ -20,9 +20,11 @@ class Proto extends SQLite3 {
       *            getLieuById($id)
       *            getModeById($id)
       *            getGabLieuMode($id)
+      *            getInfoGabarit($id)
       *            getInfoLieu($id)
       *            getInfoMode($id)
-      *            
+      *            getInfoLieuDiff($id)
+      *            getInfoModeDiff($id)    
       * 
       *      Functions to get info about the phonemes: 
       *            getId($phoneme)
@@ -101,6 +103,21 @@ class Proto extends SQLite3 {
                   return $rs['langue_id'];
             }
 
+            function totaleLang(){
+                  $sql = "SELECT COUNT(langue_id) FROM langues";
+                  $ret = $this->query($sql);
+                  $rs= $ret->fetchArray(SQLITE3_ASSOC);
+                  $keys = array_keys($rs);
+                  return $rs[$keys[0]];
+            }
+
+            function getGeneralInfo(){
+                  echo "<table>";
+                  echo "<tr> <th> toutes les langue: </th> <td> </td> </tr>";
+                  echo "<tr> <th> nombre de langues: </th> <td>".$this->totaleLang()."</td> </tr>";
+                  echo "</table>";
+            }
+
             function getGeneralInfoID($id){
                   $lexemes= $this->getAllLexemesById($id);
                   $phonemes = $this->getAllPhonemesById($id);
@@ -110,7 +127,7 @@ class Proto extends SQLite3 {
                   echo "<tr> <th> nombre de phonemes:  </th> <td>".$this->countTotalPhonDB($phonemes)."</td> </tr>";
                   echo "<tr> <th> phonemes differentes: </th> <td>".$this->countDiffPhonDB($phonemes)."</td> </tr>";
                  echo "<tr> <th> gabarit differentes: </th><td>".$this->countDiffGabaritById($id)."</td></tr>";
-                  //echo "<tr> <th> voise </th> <td>".$this->estvoise($phoneme)."</td> </tr>";
+                 /*TODO echo "<tr> <th> taille moyen de lexemes</th> <td>".$this->tailleMoyen($id)."</td> </tr>";*/
                   echo "</table>";
             }
 
@@ -133,8 +150,19 @@ class Proto extends SQLite3 {
             }
 
             function countDiffGabaritById($id){
-                  //print_r($this->getDiffGabaritById($id));
                   return count(($this->getDiffGabaritById($id)));
+            }
+
+            function getInfoGabarit($id){
+                  $gabarits = $this->getDiffGabaritById($id);
+                  $keys = array_keys($gabarits);
+                  echo "<table>";
+                  echo "<tr> <th> Langue: </th> <td>".$this->getNameLang($id)."</td> </tr>";
+                  for ($i=0; $i < sizeof($gabarits); $i++) { 
+                        echo "<tr> <th> ".$keys[$i] ." </th> <td>".$gabarits[$keys[$i]]."</td> </tr>";
+                  }
+                  echo "</table>";
+
             }
 
             function getLieuById($id){
@@ -185,6 +213,19 @@ class Proto extends SQLite3 {
                   return $lieu;
                
             }
+            /*TODO
+            function tailleMoyen($id){
+                  $lexemes = $this->getAllLexemesById($id);
+                  $count=0;
+                  $i=0;
+                  while($i < sizeof($lexemes)) { 
+                        $count += ($lexemes[$i]);
+                        $i++;
+                  }
+                  echo $count." / ".$i;
+                  return $count/$i;
+            }
+            */
             
             function getInfoMode($id){
                   $lexemes = $this->getAllLexemesById($id); 
@@ -193,6 +234,28 @@ class Proto extends SQLite3 {
                        array_push($mode, $this->getModeLex($lexemes[$i])); 
                   }
                   return $mode;
+            }
+
+            function getInfoLieuDiff($id){
+                  $lieu = array_count_values($this->getInfoLieu($id));
+                  $keys = array_keys($lieu);
+                  echo "<table>";
+                  echo "<tr> <th> Langue: </th> <td>".$this->getNameLang($id)."</td> </tr>";
+                  for ($i=0; $i < sizeof($lieu); $i++) { 
+                        echo "<tr> <th> ".$keys[$i] ." </th> <td>".$lieu[$keys[$i]]."</td> </tr>";
+                  }
+                  echo "</table>";
+            }
+
+            function getInfoModeDiff($id){
+                  $mode = array_count_values($this->getInfoMode($id));
+                  $keys = array_keys($mode);
+                  echo "<table>";
+                  echo "<tr> <th> Langue: </th> <td>".$this->getNameLang($id)."</td> </tr>";
+                  for ($i=0; $i < sizeof($mode); $i++) { 
+                        echo "<tr> <th> ".$keys[$i] ." </th> <td>".$mode[$keys[$i]]."</td> </tr>";
+                  }
+                  echo "</table>";
             }
 
 
@@ -359,6 +422,8 @@ class Proto extends SQLite3 {
                   }
                   return 0;
             }
+
+
             
             /*falta
             function decomposer($phoneme){
@@ -448,6 +513,7 @@ class Proto extends SQLite3 {
                   return $voyelles;
             } 
 
+
             function getConsonnesBD(){
                   $sql = "SELECT phoneme FROM phonemes WHERE consonant == '1'";
                   $ret = $this->query($sql);
@@ -496,7 +562,6 @@ class Proto extends SQLite3 {
                        array_push($arr, $MotArr[($keys[$i])]) ;
                   }
                   return $arr;
-
             }
 
             function getGabaritFile($file){

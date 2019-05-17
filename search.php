@@ -17,21 +17,24 @@
     		?>	
     	</select>
         <div class="column">
-        <p><input type='radio' name='genInfo'> General information</p>
-        <p><input type='radio' name='gabarits'>  Gabarits </p>
-        <p><input type='radio' name='lieu'> Par lieu </p>
-        </div>
+            <p><input type='radio' name='genInfo'> General information</p>
+            <p><input type='radio' name='gabInfo'> information gabarit</p>
+            <p><input type='radio' name='lieuInfo'> information par lieu</p>
+            <p><input type='radio' name='modeInfo'> information par mode</p>
+            </div>
         <div class="column">
-        <p><input type='radio' name='mode'> Par mode </p>
-        <p><input type='radio' name='all'> Gabarit + lieu + mode </p>
-        <p><input type='radio' name='avance'> recherche avancé </p>
+            <p><input type='radio' name='gabarits'>  Gabarits </p>
+            <p><input type='radio' name='lieu'> Par lieu </p>
+            <p><input type='radio' name='mode'> Par mode </p>
+            <p><input type='radio' name='all'> Gabarit + lieu + mode </p>
+            <p><input type='radio' name='avance'> recherche avancé </p>
         </div>
+        </br>	
         </br>
-    	
-    </br>
-    <input type="submit" name="submit" value="select">
+        <input type="submit" name="submit" value="select">
     </form>
 </div>
+
 <?php
 $db = new Proto();
 $name=$_POST['langue'];
@@ -43,6 +46,24 @@ $id = $db->getIdLang($name);
             echo $db->getGeneralInfoID($id);
             echo "</div>";
         }
+        if (isset($_POST['gabInfo'])) {
+            echo "<div class='center'>";
+            echo $db->getInfoGabarit($id);
+            echo "</div>";
+        }
+
+        if (isset($_POST['modeInfo'])) {
+            echo "<div class='center'>";
+            echo $db->getInfoModeDiff($id);
+            echo "</div>";
+        }
+
+        if (isset($_POST['lieuInfo'])) {
+            echo "<div class='center'>";
+            echo $db->getInfoLieuDiff($id);
+            echo "</div>";
+        }
+
         if (isset($_POST['gabarits'])) {
             echo "<div class='center'>";
             echo $db->getGabaritById($id);
@@ -64,6 +85,7 @@ $id = $db->getIdLang($name);
             echo "</div>";
         }
     }
+    //$db->(2)
         
     
 ?>
