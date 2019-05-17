@@ -5,7 +5,7 @@
 	/*Connecion en la base de datos */
 	class MyDB extends SQLite3 {
       	function __construct() {
-        	$this->open('test.db');
+        	$this->open('ProtoDB.db');
       	}
    	}
 	$db = new MyDB();
@@ -18,15 +18,15 @@
    /*Fin Connecion en la base de datos */
 
    /*Lectura del fichiero */
-   	$handle = fopen("public/uploads/afroasiatic_proto_transcrit3.txt", "r");
-	$tout=file("public/uploads/afroasiatic_proto_transcrit3.txt",FILE_IGNORE_NEW_LINES);
+   	$handle = fopen("public/uploads/afroasiatic_proto_transcrit.txt", "r");
+	$tout=file("public/uploads/afroasiatic_proto_transcrit.txt",FILE_IGNORE_NEW_LINES);
    /*Fin lectura del fichiero */
 	print "<table>";
 	$i=0;
 	while($i<sizeof($tout)){	
 		/*$info=explode(" ",$tout[$i]);
 		print "<tr><td>".$info[0]."</td><td>".$info[1]."</td><td>".$info[2]."</td></tr>";*/
-		print "$i $tout[$i]";
+		print "$i $tout[$i]\n";
 		$sql ="
 				INSERT INTO lexeme (lexeme_id,langue_id,transcription)
      			VALUES ('$i', 1, '$tout[$i]')";

@@ -12,22 +12,7 @@
       echo "Opened database successfully\n";
    }
 
-   $db = new MyDB();
-   if(!$db) {
-      echo $db->lastErrorMsg();
-   } else {
-      echo "Opened database successfully\n";
-   }
-
-   $sql =<<<EOF
-      CREATE TABLE COMPANY
-      (ID INT PRIMARY KEY     NOT NULL,
-      NAME           TEXT    NOT NULL,
-      AGE            INT     NOT NULL,
-      ADDRESS        CHAR(50),
-      SALARY         REAL);
-EOF;
-
+  
    $ret = $db->exec($sql);
    if(!$ret){
       echo $db->lastErrorMsg();
@@ -44,21 +29,15 @@ EOF;
       echo "Opened database successfully\n";
    }
 
-   $sql =<<<EOF
-      INSERT INTO COMPANY (ID,NAME,AGE,ADDRESS,SALARY)
-      VALUES (1, 'Paul', 32, 'California', 20000.00 );
-
-      INSERT INTO COMPANY (ID,NAME,AGE,ADDRESS,SALARY)
-      VALUES (2, 'Allen', 25, 'Texas', 15000.00 );
-
-      INSERT INTO COMPANY (ID,NAME,AGE,ADDRESS,SALARY)
-      VALUES (3, 'Teddy', 23, 'Norway', 20000.00 );
-
-      INSERT INTO COMPANY (ID,NAME,AGE,ADDRESS,SALARY)
-      VALUES (4, 'Mark', 25, 'Rich-Mond ', 65000.00 );
-EOF;
-
+   $i=0;
+   $info = array(1, 2, 3, 0);
+   while($i < 4){
+   $sql ="INSERT INTO COMPANY (ID,NAME,AGE,ADDRESS,SALARY)
+      VALUES ($i, 'Ximena', 32, $info[$i], 20000.00 )";
+   
    $ret = $db->exec($sql);
+   $i = $i+1;
+   }
    if(!$ret) {
       echo $db->lastErrorMsg();
    } else {

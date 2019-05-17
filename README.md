@@ -159,6 +159,7 @@ Codigo ascii :
 ʔ=&#660;
 ɲ=&#626
  ̆  = &#774
+  ̠=&#800
 
 ```
 
@@ -167,3 +168,10 @@ $query = SELECT MAX(lexeme_id) FROM Lexeme
 			WHERE (langue_id = (SELECT Langue 
 							  WHERE (langue_nom = afroasiatique)));
 ```
+
+-voyelle longue ? 
+-effet de consonne 
+-# de mots/Uphones 
+-derniere sylabe du mot 
+-pos consonne voisé/!voisé 
+ 
