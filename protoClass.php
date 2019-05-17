@@ -64,7 +64,7 @@ class Proto extends SQLite3 {
       *
       **/
       	function __construct() {
-        	$this->open('ProtoDB.db');
+        	   $this->open('ProtoDB.db');
       	}
 
             function getAllLangues(){
@@ -123,7 +123,7 @@ class Proto extends SQLite3 {
             }
 
             function countDiffGabaritById($id){
-                  print_r($this->getDiffGabaritById($id));
+                  //print_r($this->getDiffGabaritById($id));
                   return count(($this->getDiffGabaritById($id)));
             }
 
