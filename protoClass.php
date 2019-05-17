@@ -4,7 +4,9 @@ class Proto extends SQLite3 {
       *Functions: 
       *      Contructeurs: 
       *            __contruct()
+      *
       *      Funtions to get info about 'langue':
+      *            getAllLangues()
       *            getNameLang($id)
       *            getIdLang($name)
       *            getGeneralInfoID($id)
@@ -17,9 +19,10 @@ class Proto extends SQLite3 {
       *      Funtions Infolieu/mode
       *            getLieuById($id)
       *            getModeById($id)
+      *            getGabLieuMode($id)
       *            getInfoLieu($id)
       *            getInfoMode($id)
-      *            getGabLieuMode($id)
+      *            
       * 
       *      Functions to get info about the phonemes: 
       *            getId($phoneme)
@@ -31,13 +34,17 @@ class Proto extends SQLite3 {
       *            getModeLexArray($lexeme)
       *            estConsonne($phoneme)
       *            CV($phoneme)
-      *            estVoise($phoneme)
-      *            getInfoPhon($phoneme)
+      *            CouV($phoneme)
       *            estVoise($phoneme)
       *            estDiacritique($phoneme)
       *            estEjective($phoneme)
       *            estAffixe($phoneme)
-      *            
+      *            aAffixe($phoneme)
+      *            estCompose($phoneme)
+      *            estSuffixe($phoneme)
+      *            estPrefixe($phoneme)
+      *            consonnePresent($phoneme)
+      *            voyellePresent($phoneme)
       *            getInfoPhon($phoneme)
       *     
       *      Function to get info from DB
@@ -46,6 +53,9 @@ class Proto extends SQLite3 {
       *            getAllPhonemesDB()
       *            getAllPhonemesById($id)
       *            getAllPhonsPerLex($lexeme)
+      *            getDiacritiqueBD()
+      *            getVoyellesBD()
+      *            getConsonnesBD()
       *            getGabaritLex($lexeme)
       *            getGabaritBD($donnees)
       *            conuntLexDB($donnees)
