@@ -21,6 +21,7 @@
             <p><input type='radio' name='gabInfo'> information gabarit</p>
             <p><input type='radio' name='lieuInfo'> information par lieu</p>
             <p><input type='radio' name='modeInfo'> information par mode</p>
+            <p><input type='radio' name='phonInfo'> information par phoneme</p>
             </div>
         <div class="column">
             <p><input type='radio' name='gabarits'>  Gabarits </p>
@@ -84,6 +85,12 @@ $id = $db->getIdLang($name);
             echo $db->getGabLieuMode($id);
             echo "</div>";
         }
+        if (isset($_POST['phonInfo'])) {
+            echo "<div class='center'>";
+            echo $db->getInfoPhonById($id);
+            echo "</div>";
+        }
+        
     }
     //$db->(2)
         

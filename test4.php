@@ -47,7 +47,7 @@
 	//print_r($db->getAllLangues());
 	//print_r($db->getAllPhonsPerLex($lexeme));
 	//$phoneme = "&#700";
-	$phoneme = 'k-';
+	/*$phoneme = 'k-';
 	$phoneme1= "&#612&#800";
 	$lexeme = "a k w a&#720";
 	
@@ -62,7 +62,7 @@
 	/*print_r($db-> getDiacritiquesBD());
 	print_r($db->getConsonnesBD());
 	print_r($db->getVoyellesBD());*/
-	echo "<p>consonne Presente ".$db->consonnePresent($phoneme)."</p>";
+	/*echo "<p>consonne Presente ".$db->consonnePresent($phoneme)."</p>";
 	//echo "<p> voyelle presente ".$db->voyellePresent($phoneme)."</p>";
 	echo "<p> voyelle presente ".$db->voyellePresent($phoneme1)."</p>";
 
@@ -70,7 +70,18 @@
 	//echo $db->CV($phoneme);
 	//echo "id".$db->getId("w");
 	 echo $db->getGabaritLex(trim("g u g u "));
-	 
+
+	 echo $db->getInfoGabarit(2);
+	 echo $db->getInfoLieuDiff(2);
+     echo $db->getInfoModeDiff(2);*/
+
+     //echo $db->infoToutesLang();
+     //echo $db->tailleMoyen(2);
+     //print_r( $db->getAllPhonemesById(2));
+   //  print_r($db->getVoyellesById(2));
+    // print_r($db->getConsonnesById(2));
+    	echo $db->getInfoPhonById(2);
+
 
 	
 	

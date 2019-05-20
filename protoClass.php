@@ -121,12 +121,18 @@ class Proto extends SQLite3 {
             function getGeneralInfoID($id){
                   $lexemes= $this->getAllLexemesById($id);
                   $phonemes = $this->getAllPhonemesById($id);
+                  $voy = count($this->getVoyellesById($id));
+                  $consonnes = count($this->getConsonnesById($id));
+                  $phon= $voy+$consonnes;
                   echo "<table>";
                   echo "<tr> <th> Langue: </th> <td>".$this->getNameLang($id)."</td> </tr>";
                   echo "<tr> <th> nombre de mots: </th> <td>".$this->conuntLexDB($lexemes)."</td> </tr>";
                   echo "<tr> <th> nombre de phonemes:  </th> <td>".$this->countTotalPhonDB($phonemes)."</td> </tr>";
-                  echo "<tr> <th> phonemes differentes: </th> <td>".$this->countDiffPhonDB($phonemes)."</td> </tr>";
                  echo "<tr> <th> gabarit differentes: </th><td>".$this->countDiffGabaritById($id)."</td></tr>";
+                 echo "<tr> <th> phonemes differentes: </th> <td>".$phon."</td> </tr>";
+                 echo "<tr> <th> consonnes differentes: </th> <td>".$consonnes."</td> </tr>";
+                 echo "<tr> <th> voyelles differentes: </th> <td>".$voy."</td> </tr>";
+               //  print_r(getVoyellesById($id));
                  /*TODO echo "<tr> <th> taille moyen de lexemes</th> <td>".$this->tailleMoyen($id)."</td> </tr>";*/
                   echo "</table>";
             }
@@ -213,6 +219,22 @@ class Proto extends SQLite3 {
                   return $lieu;
                
             }
+
+            function getInfoPhonById($id){
+                  $voy = $this->getVoyellesById($id);
+                  $cons = $this->getConsonnesById($id);
+                  $arr=array_merge($voy,$cons);
+                  arsort($arr);
+                  //print_r($arr);
+                  $keys=array_keys($arr);
+                  echo "<table>";
+                  echo "<tr> <th> Langue: </th> <td>".$this->getNameLang($id)."</td> </tr>";
+                  for ($i=0; $i < sizeof($arr); $i++) { 
+                        echo "<tr> <th>".$keys[$i]." </th> <td>".$arr[$keys[$i]]."</td> </tr>";
+                  }
+                  echo "</table>";
+
+            }
             /*TODO
             function tailleMoyen($id){
                   $lexemes = $this->getAllLexemesById($id);
@@ -227,6 +249,12 @@ class Proto extends SQLite3 {
             }
             */
             
+
+
+            /*TODO 
+            */
+
+
             function getInfoMode($id){
                   $lexemes = $this->getAllLexemesById($id); 
                   $mode = array();
@@ -334,17 +362,20 @@ class Proto extends SQLite3 {
       		if($tmp==1){
       			return 'C';
       		}
-      		return "";//just in case...
+      		//return "";//just in case...
       	}
 
             function CouV($phoneme){
+                  if($phoneme != ""){
                   $estCompose = $this->estCompose($phoneme);
                   $estConsonne = $this->consonnePresent($phoneme);
                   $estVoyelle = $this->voyellePresent($phoneme);
                   if($estCompose == 1){
                         return $estConsonne!==0?$estConsonne:$estVoyelle;
                   }
+
                   return $phoneme;
+                  }
             }
             
 
@@ -423,9 +454,35 @@ class Proto extends SQLite3 {
                   return 0;
             }
 
+            function getVoyellesById($id){
+                  $phonemes = $this->getAllPhonemesById($id);
+                  //print_r(array_count_values($phonemes));
+                  $arr = array();
+                  for ($i=0; $i < sizeof($phonemes); $i++) { 
+                        $phoneme = $this->CouV($phonemes[$i]);
+                        if($phoneme != "" && $this->estConsonne($phoneme)!=1){
+                              array_push($arr, $phoneme);
+                        }
+                  }
+                  return array_count_values($arr);
+            }
+            function getConsonnesById($id){
+                  $phonemes = $this->getAllPhonemesById($id);
+                  //print_r(array_count_values($phonemes));
+                  $arr = array();
+                  for ($i=0; $i < sizeof($phonemes); $i++) { 
+                        $phoneme = $this->CouV($phonemes[$i]);
+                        if($phoneme != "" && $this->estConsonne($phoneme)==1){
+                              array_push($arr, $phoneme);
+                        }
+                  }
+                  return array_count_values($arr);
+            }
 
             
-            /*falta
+
+            
+            /*TODO
             function decomposer($phoneme){
                   $arr = array();
 
@@ -481,8 +538,9 @@ class Proto extends SQLite3 {
                  $res = array();
                  for ($i=0; $i < sizeof($arr) ; $i++) {
                         $ex = explode(" ", $arr[$i]);
-                        for ($e=0; $e < sizeof($ex) ; $e++) { 
-                                array_push($res, $ex[$e]);
+                        for ($e=0; $e < sizeof($ex) ; $e++) {
+                              $phoneme =$this->CouV($ex[$e]);
+                              array_push($res, $phoneme);
                           }  
                  }
                  return $res;
