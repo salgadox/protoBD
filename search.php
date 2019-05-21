@@ -22,8 +22,12 @@
             <p><input type='radio' name='lieuInfo'> information par lieu</p>
             <p><input type='radio' name='modeInfo'> information par mode</p>
             <p><input type='radio' name='phonInfo'> information par phoneme</p>
+            <p><input type='radio' name='moreInfoV'> plus info #voyelle</p>
+            
+
             </div>
         <div class="column">
+            <p><input type='radio' name='moreInfoC'> plus info #consonne</p>
             <p><input type='radio' name='gabarits'>  Gabarits </p>
             <p><input type='radio' name='lieu'> Par lieu </p>
             <p><input type='radio' name='mode'> Par mode </p>
@@ -40,58 +44,71 @@
 $db = new Proto();
 $name=$_POST['langue'];
 $id = $db->getIdLang($name);
-
+echo "<div class='center'>";
 	if (isset($_POST['submit'])&& $_POST["submit"]=="select" ) {
         if (isset($_POST['genInfo'])) {
-            echo "<div class='center'>";
+            echo "<div  style='float:left; margin:10px'>";
+            echo "<h4>General information</h4>";
             echo $db->getGeneralInfoID($id);
             echo "</div>";
         }
         if (isset($_POST['gabInfo'])) {
-            echo "<div class='center'>";
+            echo "<div style='float:left; margin:10px'>";
             echo $db->getInfoGabarit($id);
             echo "</div>";
         }
 
         if (isset($_POST['modeInfo'])) {
-            echo "<div class='center'>";
+            echo "<div style='float:left; margin:10px'>";
             echo $db->getInfoModeDiff($id);
             echo "</div>";
         }
 
         if (isset($_POST['lieuInfo'])) {
-            echo "<div class='center'>";
+            echo "<div style='float:left; margin:10px'>";
             echo $db->getInfoLieuDiff($id);
             echo "</div>";
         }
 
         if (isset($_POST['gabarits'])) {
-            echo "<div class='center'>";
+            echo "<div style='float:left; margin:10px'>";
             echo $db->getGabaritById($id);
             echo "</div>";
         }
         if (isset($_POST['lieu'])) {
-            echo "<div class='center'>";
+            echo "<div style='float:left; margin:10px'>";
             echo $db->getLieuById($id);
             echo "</div>";
         }
         if (isset($_POST['mode'])) {
-            echo "<div class='center'>";
+            echo "<div style='float:left; margin:10px'>";
             echo $db->getModeById($id);
             echo "</div>";
         }
         if (isset($_POST['all'])) {
-            echo "<div class='center'>";
+            echo "<div style='float:left; margin:10px'>";
             echo $db->getGabLieuMode($id);
             echo "</div>";
         }
         if (isset($_POST['phonInfo'])) {
-            echo "<div class='center'>";
+            echo "<div style='float:left; margin:10px'>";
             echo $db->getInfoPhonById($id);
+            echo "</div>";
+        }
+
+        if (isset($_POST['moreInfoV'])) {
+            echo "<div style='float:left; margin:10px'>";
+            echo $db->moreInfoV($id);
+            echo "</div>";
+        }
+        if (isset($_POST['moreInfoC'])) {
+            echo "<div style='float:left; margin:10px'>";
+            echo $db->moreInfoC($id);
             echo "</div>";
         }
         
     }
+    echo "</div>";
     //$db->(2)
         
     

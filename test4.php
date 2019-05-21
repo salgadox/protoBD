@@ -79,8 +79,19 @@
      //echo $db->tailleMoyen(2);
      //print_r( $db->getAllPhonemesById(2));
    //  print_r($db->getVoyellesById(2));
-    // print_r($db->getConsonnesById(2));
-    	echo $db->getInfoPhonById(2);
+   //  print_r($db->getConsonnesById(1));
+    //	echo $db->getInfoPhonById(2);
+    // $phoneme = "-&#612&#800";
+    // $lexeme="&#612&#800 q &#612";
+     //print_r($db->searchVInLex(3));
+     //print_r($db->searchCInLex(3));
+    // $arr=$db->getVoyellesById(3);
+    // $k=array_keys($arr);
+     //print_r($arr[$k[0]]);
+	echo $db->moreInfoC(3);	
+     //print_r($db->getPhonsEtDiacPerLex($lexeme));
+    //print_r($db->decomposer($phoneme));
+
 
 
 	

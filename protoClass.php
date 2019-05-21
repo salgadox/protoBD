@@ -132,10 +132,46 @@ class Proto extends SQLite3 {
                  echo "<tr> <th> phonemes differentes: </th> <td>".$phon."</td> </tr>";
                  echo "<tr> <th> consonnes differentes: </th> <td>".$consonnes."</td> </tr>";
                  echo "<tr> <th> voyelles differentes: </th> <td>".$voy."</td> </tr>";
-               //  print_r(getVoyellesById($id));
-                 /*TODO echo "<tr> <th> taille moyen de lexemes</th> <td>".$this->tailleMoyen($id)."</td> </tr>";*/
                   echo "</table>";
             }
+          
+            function moreInfoV($id){
+                  $voy = $this->getVoyellesById($id);
+                  $keys=array_keys($voy);
+                  $all =$this->searchVInLex($id);
+                  $j=0;
+                  echo "<table>";
+                  echo "<tr> <th> Langue: </th> <td>".$this->getNameLang($id)."</td> </tr>";
+                  foreach ($keys as $key) {
+                        echo "<tr> <th> voyelle: </th> <td style='font-weight:bold'>".$key."</td> </tr>";
+                        for ($i=0; $i < sizeof($all[$j]); $i++) { 
+                            echo "<tr> <th> </th> <td>".$all[$j][$i]."</td> </tr>";
+                           
+                        }
+                         $j++;
+
+                  }
+                  echo "</table>";
+            }
+            function moreInfoC($id){
+                  $con = $this->getConsonnesById($id);
+                  $keys=array_keys($con);
+                  $all =$this->searchCInLex($id);
+                  $j=0;
+                  echo "<table>";
+                  echo "<tr> <th> Langue: </th> <td>".$this->getNameLang($id)."</td> </tr>";
+                  foreach ($keys as $key) {
+                        echo "<tr> <th> consonne: </th> <td style='font-weight:bold'>".$key."</td> </tr>";
+                        for ($i=0; $i < sizeof($all[$j]); $i++) { 
+                            echo "<tr> <th> </th> <td>".$all[$j][$i]."</td> </tr>";
+                           
+                        }
+                         $j++;
+
+                  }
+                  echo "</table>";
+            }
+
 
             function getGabaritById($id){
                   $lexemes = $this->getAllLexemesById($id);
@@ -235,6 +271,8 @@ class Proto extends SQLite3 {
                   echo "</table>";
 
             }
+
+
             /*TODO
             function tailleMoyen($id){
                   $lexemes = $this->getAllLexemesById($id);
@@ -466,6 +504,121 @@ class Proto extends SQLite3 {
                   }
                   return array_count_values($arr);
             }
+      /*
+      function searchVInLex($id){
+            $voyelles=$this->getVoyellesById($id);
+            $keys=array_keys($voyelles);
+            $lexemes=$this->getAllLexemesById($id);
+            $arr = array();
+            for ($i=0 ; $i < sizeof($voyelles) ; $i++) { 
+                  for ($e=0; $e < sizeof($lexemes) ; $e++) { 
+                       $phonemes = $this->getPhonsEtDiacPerLex($lexemes[$e]);
+                       $pos = array_search($keys[$i], $phonemes);
+                       if ($pos !== false) {
+                             $line="<p>"; 
+                             $j = 0;
+                             while ( $j < sizeof($phonemes)) {
+                                    if ($j != $pos) {
+                                         $line .= $phonemes[$j];
+                                    }   
+                                
+                                    if($j == $pos){
+                                          $line .= "<span style='color:red'>".$phonemes[$j]."</span>";
+                                         $phonemes[$pos]="-";
+                                          $pos = array_search($keys[$i], $phonemes);
+                                         
+                                    }
+                                    
+                                    $j++;
+                              }
+
+                              $line.="</p>";
+                              array_push($arr, $line) ;
+                       }           
+                      
+                  }
+            }
+            
+            return $arr;
+      }*/
+       function searchVInLex($id){
+            $voyelles=$this->getVoyellesById($id);
+            $keys=array_keys($voyelles);
+            $lexemes=$this->getAllLexemesById($id);
+            $arr = array();
+            
+            for ($i=0 ; $i < sizeof($voyelles) ; $i++) { 
+                  $arr1= array();
+                  for ($e=0; $e < sizeof($lexemes) ; $e++) { 
+                       $phonemes = $this->getPhonsEtDiacPerLex($lexemes[$e]);
+                       $pos = array_search($keys[$i], $phonemes);
+                       if ($pos !== false) {
+                             $line="<p>"; 
+                             $j = 0;
+                             while ( $j < sizeof($phonemes)) {
+                                    if ($j != $pos) {
+                                         $line .= $phonemes[$j];
+                                    }   
+                                    if($j == $pos){
+                                          $line .= "<span style='color:red'>".$phonemes[$j]."</span>";
+                                         $phonemes[$pos]="-";
+                                          $pos = array_search($keys[$i], $phonemes);
+                                         
+                                    }
+                                    
+                                    $j++;
+                              }
+
+                              $line.="</p>";
+                              array_push($arr1, $line) ;
+                       }           
+                      
+                  }
+                  array_push($arr, $arr1) ;
+            }
+            
+            return $arr;
+      }
+
+      function searchCInLex($id){
+            $consonnes=$this->getConsonnesById($id);
+            $keys=array_keys($consonnes);
+            $lexemes=$this->getAllLexemesById($id);
+            $arr = array();
+            for ($i=0 ; $i < sizeof($consonnes) ; $i++) { 
+                  $arr1= array();
+                  for ($e=0; $e < sizeof($lexemes) ; $e++) { 
+                       $phonemes = $this->getPhonsEtDiacPerLex($lexemes[$e]);
+                       $pos = array_search($keys[$i], $phonemes);
+                       if ($pos !== false) {
+                             $line="<p>"; 
+                             $j = 0;
+                             while ( $j < sizeof($phonemes)) {
+                                    if ($j != $pos) {
+                                         $line .= $phonemes[$j];
+                                    }   
+                                
+                                    if($j == $pos){
+                                          $line .= "<span style='color:red'>".$phonemes[$j]."</span>";
+                                         $phonemes[$pos]="-";
+                                          $pos = array_search($keys[$i], $phonemes);
+                                         
+                                    }
+                                    
+                                    $j++;
+                              }
+
+                              $line.="</p>";
+                              array_push($arr1, $line) ;
+                       }           
+                      
+                  }
+                  array_push($arr, $arr1) ;
+            }
+            
+            return $arr;
+      }
+
             function getConsonnesById($id){
                   $phonemes = $this->getAllPhonemesById($id);
                   //print_r(array_count_values($phonemes));
@@ -482,13 +635,31 @@ class Proto extends SQLite3 {
             
 
             
-            /*TODO
+            
             function decomposer($phoneme){
-                  $arr = array();
-
+                  if ($this->estCompose($phoneme) ==1) {
+                       $arr = array();
+                       $cv = $this->CouV($phoneme);
+                       $sizecv = strlen($cv);
+                       $pos = stripos($phoneme, $cv);
+                       $line="";
+                      for ($i=0; $i < strlen($phoneme) ; $i++) { 
+                              if ($i < $pos) {
+                                    $line .= substr($phoneme, $i,1); 
+                              }
+                              if ($i == $pos) {
+                                   if ($line != "") {
+                                         array_push($arr, $line);
+                                    } 
+                                    array_push($arr, substr($phoneme, $pos, $sizecv));
+                                    array_push($arr, substr($phoneme, $pos+$sizecv));
+                              }        
+                      }
+                      return $arr;
+                  }
                   
                   return $phoneme;
-            }*/
+            }
 
       	function getInfoPhon($phoneme){
       		echo "<table>";
@@ -549,6 +720,23 @@ class Proto extends SQLite3 {
             function getAllPhonsPerLex($lexeme){
                  $lex = explode(" ", $lexeme);
                  return $lex;
+            }
+
+            function getPhonsEtDiacPerLex($lexeme){
+                 $lex = $this->getAllPhonsPerLex($lexeme);
+                 $arr=array();
+                 for ($i=0; $i < sizeof($lex); $i++) { 
+                        $lex[$i]=$this->decomposer($lex[$i]);
+                        if (gettype($lex[$i])=="array") {
+                              foreach ($lex[$i] as $key) {
+                                     array_push($arr, $key);
+                                }  
+                        }
+                        else{
+                              array_push($arr, $lex[$i]);
+                        }
+                 }
+                 return $arr; 
             }
             
             function getDiacritiquesBD(){
