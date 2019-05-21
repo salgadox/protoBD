@@ -9,12 +9,17 @@ class Proto extends SQLite3 {
       *            getAllLangues()
       *            getNameLang($id)
       *            getIdLang($name)
+      *            totaleLang()
+      *            getGeneralInfo()
       *            getGeneralInfoID($id)
+      *            moreInfoV($id)
+      *            moreInfoC($id)
       *
       *      Functions Gabarits 
       *            getGabaritById($id)
       *            getDiffGabaritById($id)
-      *            countDiffGabaritById($id){
+      *            countDiffGabaritById($id)
+      *            getInfoGabarit($id)
       *    
       *      Funtions Infolieu/mode
       *            getLieuById($id)
@@ -22,6 +27,7 @@ class Proto extends SQLite3 {
       *            getGabLieuMode($id)
       *            getInfoGabarit($id)
       *            getInfoLieu($id)
+      *            getInfoPhonById($id)
       *            getInfoMode($id)
       *            getInfoLieuDiff($id)
       *            getInfoModeDiff($id)    
@@ -47,6 +53,11 @@ class Proto extends SQLite3 {
       *            estPrefixe($phoneme)
       *            consonnePresent($phoneme)
       *            voyellePresent($phoneme)
+      *            getVoyellesById($id)
+      *            searchVInLex($id)
+      *            searchCInLex($id)
+      *            getConsonneById($id)
+      *            decomposer()
       *            getInfoPhon($phoneme)
       *     
       *      Function to get info from DB
