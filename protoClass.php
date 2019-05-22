@@ -267,6 +267,55 @@ class Proto extends SQLite3 {
                   return $arr;
             }
 
+            function matchDebMotLieu($id, $lieu){
+                  $debMot=$this->getJusteMots($id);
+                  $res = array();
+                  for ($i=0; $i < sizeof($debMot); $i++) { 
+                        $arr = $this->getLieuLexArray($debMot[$i]);
+                        if($arr[0]==$lieu){
+                              array_push($res, $debMot[$i]); 
+                        }
+                  }
+                  return $res;
+            }
+
+
+            function matchFinMotLieu($id, $lieu){
+                  $debMot=$this->getJusteMots($id);
+                  $res = array();
+                  for ($i=0; $i < sizeof($debMot); $i++) { 
+                        $arr = $this->getLieuLexArray($debMot[$i]);
+                        if($arr[count($arr)-1]==$lieu){
+                              array_push($res, $debMot[$i]); 
+                        }
+                  }
+                  return $res;
+            }
+
+            function matchDebMotMode($id, $mode){
+                  $debMot=$this->getJusteMots($id);
+                  $res = array();
+                  for ($i=0; $i < sizeof($debMot); $i++) { 
+                        $arr = $this->getModeLexArray($debMot[$i]);
+                        if($arr[0]==$mode){
+                              array_push($res, $debMot[$i]); 
+                        }
+                  }
+                  return $res;
+            }
+
+
+            function matchFinMotMode($id, $mode){
+                  $debMot=$this->getJusteMots($id);
+                  $res = array();
+                  for ($i=0; $i < sizeof($debMot); $i++) { 
+                        $arr = $this->getModeLexArray($debMot[$i]);
+                        if($arr[count($arr)-1]==$mode){
+                              array_push($res, $debMot[$i]); 
+                        }
+                  }
+                  return $res;
+            }
             
 
             function matchFinMot($id, $phoneme){
@@ -280,9 +329,59 @@ class Proto extends SQLite3 {
                   }
                   return $arr;
             }
-/*in process*/
+
+            function matchDebRacMode($id, $mode){
+                  $debMot=$this->getJusteDebRacine($id);
+                  $res = array();
+                  for ($i=0; $i < sizeof($debMot); $i++) { 
+                        $arr = $this->getModeLexArray($debMot[$i]);
+                        if($arr[0]==$mode){
+                              array_push($res, $debMot[$i]); 
+                        }
+                  }
+                  return $res;
+            }
+
+
+            function matchFinRacMode($id, $mode){
+                  $debMot=$this->getJusteDebRacine($id);
+                  $res = array();
+                  for ($i=0; $i < sizeof($debMot); $i++) { 
+                        $arr = $this->getModeLexArray($debMot[$i]);
+                        if($arr[count($arr)-1]==$mode){
+                              array_push($res, $debMot[$i]); 
+                        }
+                  }
+                  return $res;
+            }
+
+            function matchDebRacLieu($id, $lieu){
+                  $debMot=$this->getJusteDebRacine($id);
+                  $res = array();
+                  for ($i=0; $i < sizeof($debMot); $i++) { 
+                        $arr = $this->getLieuLexArray($debMot[$i]);
+                        if($arr[0]==$lieu){
+                              array_push($res, $debMot[$i]); 
+                        }
+                  }
+                  return $res;
+            }
+
+
+            function matchFinRacLieu($id, $lieu){
+                  $debMot=$this->getJusteFinRacine($id);
+                  $res = array();
+                  for ($i=0; $i < sizeof($debMot); $i++) { 
+                        $arr = $this->getLieuLexArray($debMot[$i]);
+                        if($arr[count($arr)-1]==$lieu){
+                              array_push($res, $debMot[$i]); 
+                        }
+                  }
+                  return $res;
+            }
+
             function matchDebRac($id, $phoneme){
-                  $rac=$this->getJusteDebRacine($id);
+                  $rac=$this->getJusteFinRacine($id);
                   $arr = array();
                   //print_r($rac);
                   for ($i=0; $i < sizeof($rac); $i++) { 

@@ -106,41 +106,73 @@ $id = $db->getIdLang($name);
 echo "<div class='center'>";
 	if (isset($_POST['submit'])&& $_POST["submit"]=="select" ) {
         if (isset($_POST['par']) && $_POST['par'] == 'phon') {  
-            if ($recherche=='iniMot') {
-                if (isset($_POST['cv']) && $_POST['cv']=='Consonne') {
-                    $arr= ($db->matchDebMot($id, $c));
+                if ($recherche=='iniMot') {
+                    if (isset($_POST['cv']) && $_POST['cv']=='Consonne') {
+                        $arr= ($db->matchDebMot($id, $c));
+                    }
+                    if(isset($_POST['cv']) && $_POST['cv']=='Voyelle') {
+                        
+                        $arr= ($db->matchDebMot($id, $v));
+                    }
                 }
-                if(isset($_POST['cv']) && $_POST['cv']=='Voyelle') {
+                if ($recherche=='iniRac') {
+                    if (isset($_POST['cv']) && $_POST['cv']=='Consonne') {
+                        $arr= ($db->matchDebRac($id, $c));
+                    }
+                    if(isset($_POST['cv']) && $_POST['cv']=='Voyelle') {   
+                        $arr= ($db->matchDebRac($id, $v));
+                    }
+                }
+                if ($recherche=='finMot') {
+                    if (isset($_POST['cv']) && $_POST['cv']=='Consonne') {
+                        $arr= ($db->matchFinMot($id, $c));
+                    }
+                    if(isset($_POST['cv']) && $_POST['cv']=='Voyelle') {
+                        $arr= ($db->matchFinMot($id, $v));
+                    }
+                }
+                if ($recherche=='finRac') {
                     
-                    $arr= ($db->matchDebMot($id, $v));
+                    if (isset($_POST['cv']) && $_POST['cv']=='Consonne') {
+                        $arr= ($db->matchFinRac($id, $c));
+                    }
+                    if(isset($_POST['cv']) && $_POST['cv']=='Voyelle') { 
+                        $arr= ($db->matchFinRac($id, $v));
+                    }
+                    
+                }
+        }
+            if (isset($_POST['par']) && $_POST['par'] == 'lieu') {
+                if ($recherche=='iniMot') {
+                   $arr=($db->matchDebMotLieu($id, $_POST['lieu'])); 
+                }
+                if ($recherche=='iniRac') {
+                   $arr=($db->matchDebRacLieu($id, $_POST['lieu'])); 
+                }
+                if ($recherche=='finMot') {
+                   $arr=($db->matchFinMotLieu($id, $_POST['lieu'])); 
+                }
+                if ($recherche=='finRac') {
+                    $arr=($db->matchFinRacLieu($id, $_POST['lieu'])); 
                 }
             }
-            if ($recherche=='iniRac') {
-                if (isset($_POST['cv']) && $_POST['cv']=='Consonne') {
-                    $arr= ($db->matchDebRac($id, $c));
+
+            if (isset($_POST['par']) && $_POST['par'] == 'mode') {
+                if ($recherche=='iniMot') {
+                   $arr=($db->matchDebMotMode($id, $_POST['mode'])); 
                 }
-                if(isset($_POST['cv']) && $_POST['cv']=='Voyelle') {   
-                    $arr= ($db->matchDebRac($id, $v));
+                if ($recherche=='iniRac') {
+                   $arr=($db->matchDebRacMode($id, $_POST['mode'])); 
+                }
+                if ($recherche=='finMot') {
+                   $arr=($db->matchFinMotMode($id, $_POST['mode'])); 
+                }
+                if ($recherche=='finRac') {
+                    $arr=($db->matchFinRacMode($id, $_POST['mode'])); 
                 }
             }
-            if ($recherche=='finMot') {
-                if (isset($_POST['cv']) && $_POST['cv']=='Consonne') {
-                    $arr= ($db->matchFinMot($id, $c));
-                }
-                if(isset($_POST['cv']) && $_POST['cv']=='Voyelle') {
-                    $arr= ($db->matchFinMot($id, $v));
-                }
-            }
-            if ($recherche=='finRac') {
-                
-                if (isset($_POST['cv']) && $_POST['cv']=='Consonne') {
-                    $arr= ($db->matchFinRac($id, $c));
-                }
-                if(isset($_POST['cv']) && $_POST['cv']=='Voyelle') { 
-                    $arr= ($db->matchFinRac($id, $v));
-                }
-                
-            }
+
+
             if(count($arr)>0){
                 echo "<div style= margin:30px'>";
                 echo "<table>"."<tr> <th> Langue: </th> <td>".$name."</td> </tr>";
@@ -152,8 +184,8 @@ echo "<div class='center'>";
             }else{
                 echo "non trouvé";
             }
-        }
     }
+    
     echo "</div>";
 
     //$db->(2)

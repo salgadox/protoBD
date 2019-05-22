@@ -116,8 +116,21 @@ echo "</br> here";
     print_r($db->getJusteFinRacine($id));
     echo "</br>";
     print_r($db->matchFinRac($id, $phoneme));*/
-
-    print_r($db->getAllLieuBD());
+    $id=1;
+    //print_r($db->getAllLieuBD());
+    $lexemes = $db->getAllLexemesById($id);
+    $lieu = $db->getInfoLieu($id);
+/*
+    print_r($lexemes);
+    foreach ($lexemes as $key) {
+    	echo "</br>";
+    	print_r( $db->getLieuLexArray($key));
+    }
+*/
+    echo "</br>";
+    $lieu="Bi";
+    print_r($db->matchFinRacLieu($id, $lieu));
+   // print_r($lieu);
 
 
 
