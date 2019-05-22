@@ -32,11 +32,16 @@
             <p><input type='radio' name='lieu'> Par lieu </p>
             <p><input type='radio' name='mode'> Par mode </p>
             <p><input type='radio' name='all'> Gabarit + lieu + mode </p>
-            <p><input type='radio' name='avance'> recherche avancé </p>
+           
         </div>
         </br>	
         </br>
-        <input type="submit" name="submit" value="select">
+        <input type="submit" name="submit" value="Select">
+    </form>
+    </br>   
+    </br>
+    <form action="advSearch.php">
+        <input type="submit" name="advSearch" value="Recherche avancée">
     </form>
 </div>
 

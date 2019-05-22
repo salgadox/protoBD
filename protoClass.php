@@ -217,6 +217,93 @@ class Proto extends SQLite3 {
                   echo "</table>";
 
             }
+            
+            function getJusteMots($id){
+                  $lexemes=$this->getAllLexemesById($id);
+                  $arr=array();
+                  for ($i=0; $i < sizeof($lexemes); $i++) { 
+                        if ($this->estPrefixe($lexemes[$i])!=1) {
+                              array_push($arr, $lexemes[$i]);
+                        }
+                  }
+                  return $arr;
+            }
+
+            function getJusteDebRacine($id){
+                  $lexemes=$this->getAllLexemesById($id);
+                  $arr=array();
+                  for ($i=0; $i < sizeof($lexemes); $i++) { 
+                        if ($this->aAffixe($lexemes[$i])==1) {
+                              if ($this->estPrefixe($lexemes[$i])==1) {
+                                   array_push($arr, $lexemes[$i]);
+                              } 
+                        }
+                  }
+                  return $arr;
+            }
+
+            function getJusteFinRacine($id){
+                  $lexemes=$this->getAllLexemesById($id);
+                  $arr=array();
+                  for ($i=0; $i < sizeof($lexemes); $i++) { 
+                        if ($this->aAffixe($lexemes[$i])==1) {
+                              if ($this->estSuffixe(substr($lexemes[$i], 1))==1) {
+                                   array_push($arr, $lexemes[$i]);
+                              } 
+                        }
+                  }
+                  return $arr;
+            }
+
+            function matchDebMot($id, $phoneme){
+                  $debMot=$this->getJusteMots($id);
+                  $arr = array();
+                  for ($i=0; $i < sizeof($debMot); $i++) { 
+                        $phons = $this->getAllPhonsPerLex($debMot[$i]);
+                        if($phons[0]==$phoneme){
+                              array_push($arr, $debMot[$i]); 
+                        }
+                  }
+                  return $arr;
+            }
+
+            
+
+            function matchFinMot($id, $phoneme){
+                  $debMot=$this->getJusteMots($id);
+                  $arr = array();
+                  for ($i=0; $i < sizeof($debMot); $i++) { 
+                        $phons = $this->getAllPhonsPerLex($debMot[$i]);
+                        if($phons[count($phons)-1]==$phoneme){
+                              array_push($arr, $debMot[$i]); 
+                        }
+                  }
+                  return $arr;
+            }
+/*in process*/
+            function matchDebRac($id, $phoneme){
+                  $rac=$this->getJusteDebRacine($id);
+                  $arr = array();
+                  //print_r($rac);
+                  for ($i=0; $i < sizeof($rac); $i++) { 
+                        $phons = $this->getAllPhonsPerLex($rac[$i]);
+                        if(($this->CouV($phons[0]))==$phoneme){
+                              array_push($arr, $rac[$i]); 
+                        }
+                  }
+                  return $arr;
+            }
+            function matchFinRac($id, $phoneme){
+                  $rac=$this->getJusteFinRacine($id);
+                  $arr = array();
+                  for ($i=0; $i < sizeof($rac); $i++) { 
+                        $phons = $this->getAllPhonsPerLex($rac[$i]);
+                        if(($this->CouV($phons[count($phons)-1]))==$phoneme){
+                              array_push($arr, $rac[$i]); 
+                        }
+                  }
+                  return $arr;
+            }
 
             function getLieuById($id){
                   $lexemes = $this->getAllLexemesById($id);
@@ -284,25 +371,6 @@ class Proto extends SQLite3 {
             }
 
 
-            /*TODO
-            function tailleMoyen($id){
-                  $lexemes = $this->getAllLexemesById($id);
-                  $count=0;
-                  $i=0;
-                  while($i < sizeof($lexemes)) { 
-                        $count += ($lexemes[$i]);
-                        $i++;
-                  }
-                  echo $count." / ".$i;
-                  return $count/$i;
-            }
-            */
-            
-
-
-            /*TODO 
-            */
-
 
             function getInfoMode($id){
                   $lexemes = $this->getAllLexemesById($id); 
@@ -335,6 +403,25 @@ class Proto extends SQLite3 {
                   echo "</table>";
             }
 
+            function getAllLieuBD(){
+                  $sql = "SELECT lieu FROM phonemes WHERE consonant = 1" ;
+                  $ret = $this->query($sql);
+                  $arr= array();
+                  while($row = $ret->fetchArray(SQLITE3_ASSOC)){
+                         array_push($arr, $row['lieu']);
+                  };
+                  return array_unique($arr);
+            }
+
+            function getAllModeBD(){
+                  $sql = "SELECT mode FROM phonemes WHERE consonant = 1" ;
+                  $ret = $this->query($sql);
+                  $arr= array();
+                  while($row = $ret->fetchArray(SQLITE3_ASSOC)){
+                         array_push($arr, $row['mode']);
+                  };
+                  return array_unique($arr);
+            }
 
       	function getId($phoneme){
 			$sql = "SELECT phoneme_id FROM phonemes WHERE phoneme =='".$phoneme."'";
@@ -462,13 +549,28 @@ class Proto extends SQLite3 {
                   return preg_match('/-/', $phoneme)?1:0;
             }
 
+       
             function estCompose($phoneme){
                   $size=strlen($phoneme);
                   $affixe = $this->aAffixe($phoneme);
                   return($size>=6 || $size ==2 || $affixe==1)?1:0;
             }
 
-            function estSuffixe($phoneme){
+            function estPrefixe($lexeme){
+                  if($this->aAffixe($lexeme)==1){
+                        return (strpos($lexeme, '-')==0?1:0);
+                  }
+                  return 0;
+            }
+
+            function estSuffixe($lexeme){
+                  if($this->aAffixe($lexeme)==1){
+                        return (strpos($lexeme, '-')==(strlen($lexeme)-1)?1:0);
+                  }
+                  return 0;
+            }
+
+            /*function estSuffixe($phoneme){
                   if($this->estCompose($phoneme)){
                         return preg_match('/-/', substr($phoneme, 1))?1:0;
                   }
@@ -480,7 +582,7 @@ class Proto extends SQLite3 {
                         return preg_match('/-/', substr($phoneme, 1))?0:1;
                   }
                   return 0;
-            }
+            }*/
             function consonnePresent($phoneme){
                   $consonnes = $this->getConsonnesBD();
                   for ($i=0; $i < sizeof($consonnes) ; $i++) { 
@@ -823,10 +925,12 @@ class Proto extends SQLite3 {
 
             function getGabaritFile($file){
                   $mots = preg_split("/\n/", file_get_contents($file));
-                  $gabarit = "";
+                  //$gabarit = "";
+                  $gabarit = array();
                   for ($i=0; $i < sizeof($mots); $i++) { 
                         if($mots[$i]!=""){
-                              $gabarit .= $this->getGabaritLex($mots[$i])."\n" ;
+                              //$gabarit .= $this->getGabaritLex($mots[$i])."\n" ;
+                              array_push($gabarit, $this->getGabaritLex($mots[$i]));
                         } 
                   }
                   return $gabarit ;

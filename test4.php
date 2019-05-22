@@ -4,7 +4,7 @@
 <?php 
 
 	$db = new Proto();
-	//$file = "public/uploads/aja_proto_transcrit.txt";
+	$file = "public/uploads/aja_proto_transcrit.txt";
 	//echo "gabarit from FIle: ".$db->getGabaritFile($file);
 	//$donnees = $db->getAllPhonemesDB();
 	//$donnees = $db->getAllLexemesById(2);
@@ -81,16 +81,45 @@
    //  print_r($db->getVoyellesById(2));
    //  print_r($db->getConsonnesById(1));
     //	echo $db->getInfoPhonById(2);
-    // $phoneme = "-&#612&#800";
+     $phoneme = "&#612&#800 d s-";
     // $lexeme="&#612&#800 q &#612";
      //print_r($db->searchVInLex(3));
      //print_r($db->searchCInLex(3));
     // $arr=$db->getVoyellesById(3);
     // $k=array_keys($arr);
      //print_r($arr[$k[0]]);
-	echo $db->moreInfoC(3);	
+	//echo $db->moreInfoC(3);	
      //print_r($db->getPhonsEtDiacPerLex($lexeme));
     //print_r($db->decomposer($phoneme));
+    //print_r($db->getGabaritFile($file));
+
+   /* echo "<p>2</p>";
+    print_r($db->getJusteMots(2));
+    echo "<p>2 racine debut</p>";
+    print_r($db->getJusteDebRacine(2));
+     echo "<p>2 racine fin</p>";
+    print_r($db->getJusteFinRacine(2));
+
+    echo "<p>3</p>";
+    print_r($db->getJusteMots(3));
+    echo "<p>3 racine debut</p>";
+    print_r($db->getJusteDebRacine(3));
+     echo "<p>3 racine fin</p>";
+    print_r($db->getJusteFinRacine(3));*/
+/*
+    $phoneme = 'q'; 
+    $id=3;
+    print_r($db->getAllLexemesById($id));
+    echo "</br>";
+    print_r($db->getJusteMots($id));
+echo "</br> here";
+    print_r($db->getJusteFinRacine($id));
+    echo "</br>";
+    print_r($db->matchFinRac($id, $phoneme));*/
+
+    print_r($db->getAllLieuBD());
+
+
 
 
 
