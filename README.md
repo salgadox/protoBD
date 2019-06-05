@@ -53,9 +53,10 @@ php --version
 Due to a combinaision of problems regarding the coding we decide it was going to be best if we change the phonemes non represented by a QWERTY keyboard inside de DB to be represented by a code legible by a browser. 
 
 Here is a table with their codes: 
+
 |id|phoneme|place|mode|voisement|consonnant|nasal|diacritic|
 |---|---|---|---|---|---|---|---|
-|1|	m|	Bi|	Na|	1|	1|	2|	0| |
+|1|	m|	Bi|	Na|	1|	1|	2|	0| 
 |2|	&#625|	Lde|	Na|	1|	1|	2|	0|
 |3|	n|	Al|	Na|	1|	1|	2|	0| |
 |4|	&#627|	Re|	Na|	1|	1|	2|	0|
