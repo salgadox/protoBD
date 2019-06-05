@@ -1,8 +1,7 @@
 # "Structuration et programmation d'une base de données linguistiques"
 >This project is presented as my "Master 1 MIASHS DCISS" intership project. The project took place at Gipsa-Lab, DPC deparment, from 6 May to the 22 May and was lead by Vallée Nathalie.  It is the result of 75 hours of work. 
 
-![ScreenShot](readmeImages/articlePage1.png "Show article page")
-![CommentPage](readmeImages/articlesPage2.png "Show comments page")
+
 
 ## Table of Contents
 
