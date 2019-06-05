@@ -50,7 +50,7 @@ $db = new Proto();
 $name=$_POST['langue'];
 $id = $db->getIdLang($name);
 echo "<div class='center'>";
-	if (isset($_POST['submit'])&& $_POST["submit"]=="select" ) {
+	if (isset($_POST['submit'])&& $_POST["submit"]=="Select" ) {
         if (isset($_POST['genInfo'])) {
             echo "<div  style='float:left; margin:10px'>";
             echo "<h4>General information</h4>";
